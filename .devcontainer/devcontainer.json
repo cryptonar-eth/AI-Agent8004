@@ -1,0 +1,19 @@
+{
+  "name": "AI-Agent8004 Codespace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "visibility": "public"
+    }
+  },
+  "remoteUser": "codespace",
+  "containerEnv": {
+    "PORT": "3000"
+  }
+}
