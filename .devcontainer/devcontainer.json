@@ -1,19 +1,19 @@
 {
   "name": "AI-Agent8004 Codespace",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
+      "version": "20"
     }
   },
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
-      "visibility": "public"
+      "label": "A2A Server",
+      "onAutoForward": "openBrowser",
+      "protocol": "https"
     }
   },
-  "remoteUser": "codespace",
-  "containerEnv": {
-    "PORT": "3000"
-  }
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
 }
