@@ -1,0 +1,17 @@
+{
+  "name": "ai-agent8004",
+  "version": "1.0.0",
+  "description": "ERCagent8004",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1"
+  }
+}
