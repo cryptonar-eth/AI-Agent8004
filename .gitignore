@@ -13,3 +13,4 @@ __pycache__/
 *.pem
 *.seed
 secrets/
+*.egg-info/
