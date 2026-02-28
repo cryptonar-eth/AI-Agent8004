@@ -1,7 +1,15 @@
-node_modules/
-dist/
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Env / secrets
 .env
-*.log
-.env
-node_modules
-.env
+.env.*
+*.key
+*.pem
+*.seed
+secrets/
