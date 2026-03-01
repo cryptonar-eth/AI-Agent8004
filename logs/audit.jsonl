@@ -1,0 +1,10 @@
+{"ts_ms": 1772372865460, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ETH-USD-1772372865459"]}}
+{"ts_ms": 1772372865467, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ETH-USD-1772372865459", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}}}
+{"ts_ms": 1772373007575, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ETH-USD-1772373007575"]}}
+{"ts_ms": 1772373007575, "event": "blocked_killswitch", "data": {"proposal_id": "trade-ETH-USD-1772373007575", "type": "trade"}}
+{"ts_ms": 1772374541662, "event": "proposals_created", "data": {"count": 1, "ids": ["trade--2A6qvXFRjpVm6n1"]}}
+{"ts_ms": 1772374541663, "event": "blocked_no_approval", "data": {"proposal_id": "trade--2A6qvXFRjpVm6n1", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}}}
+{"ts_ms": 1772374562287, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-a3DcDIq7MW4KB4oW"]}}
+{"ts_ms": 1772374562289, "event": "blocked_no_approval", "data": {"proposal_id": "trade-a3DcDIq7MW4KB4oW", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}}}
+{"ts_ms": 1772375693285, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-RoEQJhDnWKsYwgKv"]}}
+{"ts_ms": 1772375693286, "event": "dry_run_trade", "data": {"proposal_id": "trade-RoEQJhDnWKsYwgKv", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}, "reason": "demo proposal"}}
