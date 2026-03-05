@@ -1,0 +1,11 @@
+{
+  "daily_pnl_usd": 0.0,
+  "day_key": "2026-03-05",
+  "equity_usd": 1000.0,
+  "executed_proposal_ids": [
+    "trade-smoke-fixed-0001"
+  ],
+  "last_trade_ts_ms_by_symbol": {
+    "ETH-USD": 1772730642867
+  }
+}

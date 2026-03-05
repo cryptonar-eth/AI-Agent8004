@@ -8,3 +8,589 @@
 {"ts_ms": 1772374562289, "event": "blocked_no_approval", "data": {"proposal_id": "trade-a3DcDIq7MW4KB4oW", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}}}
 {"ts_ms": 1772375693285, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-RoEQJhDnWKsYwgKv"]}}
 {"ts_ms": 1772375693286, "event": "dry_run_trade", "data": {"proposal_id": "trade-RoEQJhDnWKsYwgKv", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}, "reason": "demo proposal"}}
+{"ts_ms": 1772376651519, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-xARNIyPbxKzn5C2E"]}}
+{"ts_ms": 1772376651520, "event": "dry_run_trade", "data": {"proposal_id": "trade-xARNIyPbxKzn5C2E", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}, "reason": "demo proposal"}}
+{"ts_ms": 1772376910499, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-bfUnvC0-JxP1rPyZ"]}}
+{"ts_ms": 1772376910500, "event": "dry_run_trade", "data": {"proposal_id": "trade-bfUnvC0-JxP1rPyZ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}, "reason": "demo proposal"}}
+{"ts_ms": 1772376910793, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-gIOKW5CZ-6EVm1cW"]}}
+{"ts_ms": 1772376910794, "event": "blocked_risk_pct", "data": {"proposal_id": "trade-gIOKW5CZ-6EVm1cW", "reason": "Cooldown active for ETH-USD: wait 120s", "notional_usd": 17.5}}
+{"ts_ms": 1772643308753, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-g3Wb4TAatpOxIcIz"]}}
+{"ts_ms": 1772643310789, "event": "blocked_state_unreadable", "data": {"proposal_id": "trade-g3Wb4TAatpOxIcIz", "error": "Timed out acquiring state lock: logs/state.json.lock"}}
+{"ts_ms": 1772644693748, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-zrJOIolPAOLdRP53"]}}
+{"ts_ms": 1772644697040, "event": "blocked_state_unreadable", "data": {"proposal_id": "trade-zrJOIolPAOLdRP53", "error": "Timed out acquiring state lock: logs/state.json.lock"}}
+{"ts_ms": 1772644724795, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-BbqFwxOHaCf6zHoX"]}}
+{"ts_ms": 1772644726815, "event": "blocked_state_unreadable", "data": {"proposal_id": "trade-BbqFwxOHaCf6zHoX", "error": "Timed out acquiring state lock: logs/state.json.lock"}}
+{"ts_ms": 1772644833243, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-2m6gPKGMuU0zEHbS"]}}
+{"ts_ms": 1772644837744, "event": "blocked_state_unreadable", "data": {"proposal_id": "trade-2m6gPKGMuU0zEHbS", "error": "Timed out acquiring state lock: logs/state.json.lock"}}
+{"ts_ms": 1772645252058, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-8_Cp3o-dnjI5nj1c"]}}
+{"ts_ms": 1772645252062, "event": "blocked_no_approval", "data": {"proposal_id": "trade-8_Cp3o-dnjI5nj1c", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}}}
+{"ts_ms": 1772645419685, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-l-iaycarKuiEMSeI"]}}
+{"ts_ms": 1772645419689, "event": "blocked_no_approval", "data": {"proposal_id": "trade-l-iaycarKuiEMSeI", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}}}
+{"ts_ms": 1772646563324, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-demo-fixed-0001"]}}
+{"ts_ms": 1772646563327, "event": "blocked_no_approval", "data": {"proposal_id": "trade-demo-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}}}
+{"ts_ms": 1772646605791, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-demo-fixed-0001"]}}
+{"ts_ms": 1772646605797, "event": "dry_run_trade", "data": {"proposal_id": "trade-demo-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.005}, "reason": "demo proposal"}}
+{"ts_ms": 1772646623123, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-demo-fixed-0001"]}}
+{"ts_ms": 1772646623125, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-demo-fixed-0001"}}
+{"ts_ms": 1772727406279, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-5ssVh_SJxgGNmRyD"]}}
+{"ts_ms": 1772727406323, "event": "blocked_no_approval", "data": {"proposal_id": "trade-5ssVh_SJxgGNmRyD", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727416335, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-UvQMSyzV4LSnjoj0"]}}
+{"ts_ms": 1772727416336, "event": "blocked_no_approval", "data": {"proposal_id": "trade-UvQMSyzV4LSnjoj0", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727426347, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-wV5X_RnVsoiuZfUE"]}}
+{"ts_ms": 1772727426348, "event": "blocked_no_approval", "data": {"proposal_id": "trade-wV5X_RnVsoiuZfUE", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727436361, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-OPjeNeuPE6AYd7cX"]}}
+{"ts_ms": 1772727436362, "event": "blocked_no_approval", "data": {"proposal_id": "trade-OPjeNeuPE6AYd7cX", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727446373, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-nwGymAEt4b60fjIa"]}}
+{"ts_ms": 1772727446373, "event": "blocked_no_approval", "data": {"proposal_id": "trade-nwGymAEt4b60fjIa", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727456383, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-oh2QVcJzWuFGYuRq"]}}
+{"ts_ms": 1772727456383, "event": "blocked_no_approval", "data": {"proposal_id": "trade-oh2QVcJzWuFGYuRq", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727466396, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-_4WQxtP8N5lGeuex"]}}
+{"ts_ms": 1772727466397, "event": "blocked_no_approval", "data": {"proposal_id": "trade-_4WQxtP8N5lGeuex", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727476413, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-gjMHhtNY2XKjH47v"]}}
+{"ts_ms": 1772727476413, "event": "blocked_no_approval", "data": {"proposal_id": "trade-gjMHhtNY2XKjH47v", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727486425, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-AsRITWzI7vsAtMTX"]}}
+{"ts_ms": 1772727486426, "event": "blocked_no_approval", "data": {"proposal_id": "trade-AsRITWzI7vsAtMTX", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727496435, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-2-yAKz5FY2p9czPF"]}}
+{"ts_ms": 1772727496436, "event": "blocked_no_approval", "data": {"proposal_id": "trade-2-yAKz5FY2p9czPF", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727506863, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-4bYtuz0zKb6Xb9Bi"]}}
+{"ts_ms": 1772727506863, "event": "blocked_no_approval", "data": {"proposal_id": "trade-4bYtuz0zKb6Xb9Bi", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727516873, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-jPN4lDzh8ckuXC-e"]}}
+{"ts_ms": 1772727516873, "event": "blocked_no_approval", "data": {"proposal_id": "trade-jPN4lDzh8ckuXC-e", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727526883, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-mLYciXUzFybfB8Bd"]}}
+{"ts_ms": 1772727526883, "event": "blocked_no_approval", "data": {"proposal_id": "trade-mLYciXUzFybfB8Bd", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727537305, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-NHWjx4_UXv120MvZ"]}}
+{"ts_ms": 1772727537305, "event": "blocked_no_approval", "data": {"proposal_id": "trade-NHWjx4_UXv120MvZ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727547315, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ouog1bN8NBt0W65k"]}}
+{"ts_ms": 1772727547315, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ouog1bN8NBt0W65k", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727557325, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-bGtfkILoTx3YfsK9"]}}
+{"ts_ms": 1772727557326, "event": "blocked_no_approval", "data": {"proposal_id": "trade-bGtfkILoTx3YfsK9", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727567335, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Hamet8xMKhRv2gXQ"]}}
+{"ts_ms": 1772727567336, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Hamet8xMKhRv2gXQ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727577347, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-RCMKWMO4oWoU4Bjc"]}}
+{"ts_ms": 1772727577349, "event": "blocked_no_approval", "data": {"proposal_id": "trade-RCMKWMO4oWoU4Bjc", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727587363, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-FsFJkC2dYfgaZTu6"]}}
+{"ts_ms": 1772727587363, "event": "blocked_no_approval", "data": {"proposal_id": "trade-FsFJkC2dYfgaZTu6", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727597375, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Nun_TGIfpR1pMdfD"]}}
+{"ts_ms": 1772727597375, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Nun_TGIfpR1pMdfD", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727607387, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-IcqMpRq2riE5lBDv"]}}
+{"ts_ms": 1772727607388, "event": "blocked_no_approval", "data": {"proposal_id": "trade-IcqMpRq2riE5lBDv", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727617397, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Opkrn1LiWYkcx5Ho"]}}
+{"ts_ms": 1772727617397, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Opkrn1LiWYkcx5Ho", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727627411, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-uwcQImqYbr0nDsxj"]}}
+{"ts_ms": 1772727627412, "event": "blocked_no_approval", "data": {"proposal_id": "trade-uwcQImqYbr0nDsxj", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727637424, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-f8Be9p4CZBznOXCm"]}}
+{"ts_ms": 1772727637424, "event": "blocked_no_approval", "data": {"proposal_id": "trade-f8Be9p4CZBznOXCm", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727647437, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-u-7arXS8S-nd9dCt"]}}
+{"ts_ms": 1772727647437, "event": "blocked_no_approval", "data": {"proposal_id": "trade-u-7arXS8S-nd9dCt", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727657445, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-612QqkmT6Cl34Xtu"]}}
+{"ts_ms": 1772727657445, "event": "blocked_no_approval", "data": {"proposal_id": "trade-612QqkmT6Cl34Xtu", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727667457, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-vf8p2wb_lRy4gJwK"]}}
+{"ts_ms": 1772727667458, "event": "blocked_no_approval", "data": {"proposal_id": "trade-vf8p2wb_lRy4gJwK", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727677467, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ZrD4lRhtC1BI_4M1"]}}
+{"ts_ms": 1772727677468, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ZrD4lRhtC1BI_4M1", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727687483, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-e9JXH1odwIbFs3yp"]}}
+{"ts_ms": 1772727687483, "event": "blocked_no_approval", "data": {"proposal_id": "trade-e9JXH1odwIbFs3yp", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727697493, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-f1mSIM2HdYsfPcjG"]}}
+{"ts_ms": 1772727697493, "event": "blocked_no_approval", "data": {"proposal_id": "trade-f1mSIM2HdYsfPcjG", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727707505, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-uFdPrgweeVdbSUBv"]}}
+{"ts_ms": 1772727707505, "event": "blocked_no_approval", "data": {"proposal_id": "trade-uFdPrgweeVdbSUBv", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727717515, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-uStXTrcUQeLHlwg-"]}}
+{"ts_ms": 1772727717515, "event": "blocked_no_approval", "data": {"proposal_id": "trade-uStXTrcUQeLHlwg-", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727727525, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-9Gl75hACf6fph98X"]}}
+{"ts_ms": 1772727727526, "event": "blocked_no_approval", "data": {"proposal_id": "trade-9Gl75hACf6fph98X", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727737537, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-dlx6Fjwh9i9fo8Dx"]}}
+{"ts_ms": 1772727737537, "event": "blocked_no_approval", "data": {"proposal_id": "trade-dlx6Fjwh9i9fo8Dx", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727747547, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-EfV8IjY6S01BE0VR"]}}
+{"ts_ms": 1772727747548, "event": "blocked_no_approval", "data": {"proposal_id": "trade-EfV8IjY6S01BE0VR", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727757557, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-b5MfnzzegU_RPz0Z"]}}
+{"ts_ms": 1772727757557, "event": "blocked_no_approval", "data": {"proposal_id": "trade-b5MfnzzegU_RPz0Z", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727767568, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-nHm7659NanNwUjSM"]}}
+{"ts_ms": 1772727767568, "event": "blocked_no_approval", "data": {"proposal_id": "trade-nHm7659NanNwUjSM", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727777579, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-7EGyCTfikW9oMtNy"]}}
+{"ts_ms": 1772727777580, "event": "blocked_no_approval", "data": {"proposal_id": "trade-7EGyCTfikW9oMtNy", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727787595, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-dO80Js2s3lNzKyTp"]}}
+{"ts_ms": 1772727787596, "event": "blocked_no_approval", "data": {"proposal_id": "trade-dO80Js2s3lNzKyTp", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727797613, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-QGmyH5l1NnYt2Mp1"]}}
+{"ts_ms": 1772727797614, "event": "blocked_no_approval", "data": {"proposal_id": "trade-QGmyH5l1NnYt2Mp1", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727807624, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-vgFwFQ1KmfsKPHMZ"]}}
+{"ts_ms": 1772727807624, "event": "blocked_no_approval", "data": {"proposal_id": "trade-vgFwFQ1KmfsKPHMZ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727817636, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-0Wn_EwJp0SRgwwtB"]}}
+{"ts_ms": 1772727817637, "event": "blocked_no_approval", "data": {"proposal_id": "trade-0Wn_EwJp0SRgwwtB", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727827647, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-T6KDXB97eVHQmI4f"]}}
+{"ts_ms": 1772727827648, "event": "blocked_no_approval", "data": {"proposal_id": "trade-T6KDXB97eVHQmI4f", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727837661, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-u29J18S64LNWEbBy"]}}
+{"ts_ms": 1772727837661, "event": "blocked_no_approval", "data": {"proposal_id": "trade-u29J18S64LNWEbBy", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727847673, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ZEs3a9wfq2EEnHzz"]}}
+{"ts_ms": 1772727847673, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ZEs3a9wfq2EEnHzz", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727857687, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-zTtGAbBibUTDMppI"]}}
+{"ts_ms": 1772727857687, "event": "blocked_no_approval", "data": {"proposal_id": "trade-zTtGAbBibUTDMppI", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727867699, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-CKb5d2i7i7Whb3qm"]}}
+{"ts_ms": 1772727867700, "event": "blocked_no_approval", "data": {"proposal_id": "trade-CKb5d2i7i7Whb3qm", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727877711, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-touj-AgZcq2QhZwV"]}}
+{"ts_ms": 1772727877712, "event": "blocked_no_approval", "data": {"proposal_id": "trade-touj-AgZcq2QhZwV", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727887725, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-RPubbFpGkmvNjATJ"]}}
+{"ts_ms": 1772727887725, "event": "blocked_no_approval", "data": {"proposal_id": "trade-RPubbFpGkmvNjATJ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727897736, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-QofujRk-f-s84_ne"]}}
+{"ts_ms": 1772727897737, "event": "blocked_no_approval", "data": {"proposal_id": "trade-QofujRk-f-s84_ne", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727907753, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-O0VC7sTkrmKVBXeQ"]}}
+{"ts_ms": 1772727907753, "event": "blocked_no_approval", "data": {"proposal_id": "trade-O0VC7sTkrmKVBXeQ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727917767, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ljfyfHybSAaOMJuz"]}}
+{"ts_ms": 1772727917768, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ljfyfHybSAaOMJuz", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727927778, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-8_cqeR7XD2hxdCcu"]}}
+{"ts_ms": 1772727927779, "event": "blocked_no_approval", "data": {"proposal_id": "trade-8_cqeR7XD2hxdCcu", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727937791, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-JSD7fZc-Fyr2dLSg"]}}
+{"ts_ms": 1772727937792, "event": "blocked_no_approval", "data": {"proposal_id": "trade-JSD7fZc-Fyr2dLSg", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727947804, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-vWXfm6B4w_TkKIUz"]}}
+{"ts_ms": 1772727947805, "event": "blocked_no_approval", "data": {"proposal_id": "trade-vWXfm6B4w_TkKIUz", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727957816, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-MK30ogh0nnSnv-RE"]}}
+{"ts_ms": 1772727957816, "event": "blocked_no_approval", "data": {"proposal_id": "trade-MK30ogh0nnSnv-RE", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727967829, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-3i2SvKCiazZpkn08"]}}
+{"ts_ms": 1772727967829, "event": "blocked_no_approval", "data": {"proposal_id": "trade-3i2SvKCiazZpkn08", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727977840, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-VaM5MiiMwIrXVY0E"]}}
+{"ts_ms": 1772727977841, "event": "blocked_no_approval", "data": {"proposal_id": "trade-VaM5MiiMwIrXVY0E", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727987852, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-uvKtsac33C0YIMPr"]}}
+{"ts_ms": 1772727987852, "event": "blocked_no_approval", "data": {"proposal_id": "trade-uvKtsac33C0YIMPr", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772727997865, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-5MvBo3-Ap-gv_j2U"]}}
+{"ts_ms": 1772727997865, "event": "blocked_no_approval", "data": {"proposal_id": "trade-5MvBo3-Ap-gv_j2U", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728007876, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-FTs_BhTHxFU4i7ZR"]}}
+{"ts_ms": 1772728007876, "event": "blocked_no_approval", "data": {"proposal_id": "trade-FTs_BhTHxFU4i7ZR", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728017888, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-xGeU-fVvgwN_XY9d"]}}
+{"ts_ms": 1772728017888, "event": "blocked_no_approval", "data": {"proposal_id": "trade-xGeU-fVvgwN_XY9d", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728027898, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-KE5HfFvCDoMB-9Oh"]}}
+{"ts_ms": 1772728027899, "event": "blocked_no_approval", "data": {"proposal_id": "trade-KE5HfFvCDoMB-9Oh", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728038411, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-aXILuIUt8gfou9WL"]}}
+{"ts_ms": 1772728038411, "event": "blocked_no_approval", "data": {"proposal_id": "trade-aXILuIUt8gfou9WL", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728048419, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-2F-nz9xDtnJtw5le"]}}
+{"ts_ms": 1772728048420, "event": "blocked_no_approval", "data": {"proposal_id": "trade-2F-nz9xDtnJtw5le", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728058430, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ACYFLe9dUc785w4R"]}}
+{"ts_ms": 1772728058431, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ACYFLe9dUc785w4R", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728068442, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-D401sg6PNcUhqf-k"]}}
+{"ts_ms": 1772728068444, "event": "blocked_no_approval", "data": {"proposal_id": "trade-D401sg6PNcUhqf-k", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728078861, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-KAJ-XsyzhriboRA6"]}}
+{"ts_ms": 1772728078862, "event": "blocked_no_approval", "data": {"proposal_id": "trade-KAJ-XsyzhriboRA6", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728088870, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-MDw6tTccIhGwZTuB"]}}
+{"ts_ms": 1772728088871, "event": "blocked_no_approval", "data": {"proposal_id": "trade-MDw6tTccIhGwZTuB", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728098881, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-EUKDkB_lVN7rNfIo"]}}
+{"ts_ms": 1772728098881, "event": "blocked_no_approval", "data": {"proposal_id": "trade-EUKDkB_lVN7rNfIo", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728109383, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-bVPSoVatbYz9wkez"]}}
+{"ts_ms": 1772728109384, "event": "blocked_no_approval", "data": {"proposal_id": "trade-bVPSoVatbYz9wkez", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728119393, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-gdIua8HHM2vXXHJq"]}}
+{"ts_ms": 1772728119393, "event": "blocked_no_approval", "data": {"proposal_id": "trade-gdIua8HHM2vXXHJq", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728129404, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-dLI1j08osqa_bW9k"]}}
+{"ts_ms": 1772728129405, "event": "blocked_no_approval", "data": {"proposal_id": "trade-dLI1j08osqa_bW9k", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728139890, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-6xKERy_vuZv19RZ5"]}}
+{"ts_ms": 1772728139891, "event": "blocked_no_approval", "data": {"proposal_id": "trade-6xKERy_vuZv19RZ5", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728149901, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-vD19w-DzG_vDy7m2"]}}
+{"ts_ms": 1772728149902, "event": "blocked_no_approval", "data": {"proposal_id": "trade-vD19w-DzG_vDy7m2", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728159912, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ItLW42arcfomPGeJ"]}}
+{"ts_ms": 1772728159913, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ItLW42arcfomPGeJ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728170400, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-R9JyFVK9vRBwz3dK"]}}
+{"ts_ms": 1772728170400, "event": "blocked_no_approval", "data": {"proposal_id": "trade-R9JyFVK9vRBwz3dK", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728180413, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-lIeTN8xMprQ6ASCp"]}}
+{"ts_ms": 1772728180415, "event": "blocked_no_approval", "data": {"proposal_id": "trade-lIeTN8xMprQ6ASCp", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728190430, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-8DoDC5F0QMkJkAqT"]}}
+{"ts_ms": 1772728190430, "event": "blocked_no_approval", "data": {"proposal_id": "trade-8DoDC5F0QMkJkAqT", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728200896, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-SjFkTYnqZZ-nUk4H"]}}
+{"ts_ms": 1772728200897, "event": "blocked_no_approval", "data": {"proposal_id": "trade-SjFkTYnqZZ-nUk4H", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728210908, "event": "proposals_created", "data": {"count": 1, "ids": ["trade--6UaEBmwihSjvge8"]}}
+{"ts_ms": 1772728210909, "event": "blocked_no_approval", "data": {"proposal_id": "trade--6UaEBmwihSjvge8", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728220920, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-uiOZau8pg7-PkOgc"]}}
+{"ts_ms": 1772728220921, "event": "blocked_no_approval", "data": {"proposal_id": "trade-uiOZau8pg7-PkOgc", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728230934, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-aRD2cJHAPl1D2Ws8"]}}
+{"ts_ms": 1772728230935, "event": "blocked_no_approval", "data": {"proposal_id": "trade-aRD2cJHAPl1D2Ws8", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728240948, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Pkh5Qv32gZlZYj1x"]}}
+{"ts_ms": 1772728240949, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Pkh5Qv32gZlZYj1x", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728250967, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-nAtVslI-DAqdGL_H"]}}
+{"ts_ms": 1772728250967, "event": "blocked_no_approval", "data": {"proposal_id": "trade-nAtVslI-DAqdGL_H", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728260978, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-a-0H7zIGpynF8Sub"]}}
+{"ts_ms": 1772728260979, "event": "blocked_no_approval", "data": {"proposal_id": "trade-a-0H7zIGpynF8Sub", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728271425, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-dPdS0QvsbwhBgM5R"]}}
+{"ts_ms": 1772728271426, "event": "blocked_no_approval", "data": {"proposal_id": "trade-dPdS0QvsbwhBgM5R", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728281437, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-X_XMam0kbo_e4O3G"]}}
+{"ts_ms": 1772728281437, "event": "blocked_no_approval", "data": {"proposal_id": "trade-X_XMam0kbo_e4O3G", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728291448, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-S2z4317an7bm1Jva"]}}
+{"ts_ms": 1772728291449, "event": "blocked_no_approval", "data": {"proposal_id": "trade-S2z4317an7bm1Jva", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728301892, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-JgYGzYiSMLGK7_2h"]}}
+{"ts_ms": 1772728301893, "event": "blocked_no_approval", "data": {"proposal_id": "trade-JgYGzYiSMLGK7_2h", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728311905, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-H_3HcxpN6c0z5Kas"]}}
+{"ts_ms": 1772728311906, "event": "blocked_no_approval", "data": {"proposal_id": "trade-H_3HcxpN6c0z5Kas", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728321917, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-8W8VNGZyOIIP_H2o"]}}
+{"ts_ms": 1772728321917, "event": "blocked_no_approval", "data": {"proposal_id": "trade-8W8VNGZyOIIP_H2o", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728332345, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-v72G3Yimli0CeT5a"]}}
+{"ts_ms": 1772728332346, "event": "blocked_no_approval", "data": {"proposal_id": "trade-v72G3Yimli0CeT5a", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728342355, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Furr9uD6A4gvv37N"]}}
+{"ts_ms": 1772728342355, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Furr9uD6A4gvv37N", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728352367, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-dBjUT8VbFuc466bg"]}}
+{"ts_ms": 1772728352368, "event": "blocked_no_approval", "data": {"proposal_id": "trade-dBjUT8VbFuc466bg", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728362381, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-BEl7Hg-kvLOsV0oY"]}}
+{"ts_ms": 1772728362382, "event": "blocked_no_approval", "data": {"proposal_id": "trade-BEl7Hg-kvLOsV0oY", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728372827, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-oS4oh_H1nVywkE3S"]}}
+{"ts_ms": 1772728372828, "event": "blocked_no_approval", "data": {"proposal_id": "trade-oS4oh_H1nVywkE3S", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728382837, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-30-u_oMZXkESXGBv"]}}
+{"ts_ms": 1772728382838, "event": "blocked_no_approval", "data": {"proposal_id": "trade-30-u_oMZXkESXGBv", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728392846, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-_rDQOVAbBDaaSB0a"]}}
+{"ts_ms": 1772728392847, "event": "blocked_no_approval", "data": {"proposal_id": "trade-_rDQOVAbBDaaSB0a", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728403290, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-mHMFyVKMOEn4n167"]}}
+{"ts_ms": 1772728403290, "event": "blocked_no_approval", "data": {"proposal_id": "trade-mHMFyVKMOEn4n167", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728413301, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-U9wszyOcsA05eW3Y"]}}
+{"ts_ms": 1772728413302, "event": "blocked_no_approval", "data": {"proposal_id": "trade-U9wszyOcsA05eW3Y", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728423314, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-7tftl5H6DhF4MjCM"]}}
+{"ts_ms": 1772728423315, "event": "blocked_no_approval", "data": {"proposal_id": "trade-7tftl5H6DhF4MjCM", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728433756, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-sN6mH5LmPcJ8Og_s"]}}
+{"ts_ms": 1772728433757, "event": "blocked_no_approval", "data": {"proposal_id": "trade-sN6mH5LmPcJ8Og_s", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728443769, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-1h1FU0RulsumGpGb"]}}
+{"ts_ms": 1772728443769, "event": "blocked_no_approval", "data": {"proposal_id": "trade-1h1FU0RulsumGpGb", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728453779, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Ri7zWrSldaXBDdm-"]}}
+{"ts_ms": 1772728453779, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Ri7zWrSldaXBDdm-", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728464228, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-szXSgWzaQmrIaV-I"]}}
+{"ts_ms": 1772728464229, "event": "blocked_no_approval", "data": {"proposal_id": "trade-szXSgWzaQmrIaV-I", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728474242, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-LSgBONfJkoQzA-lP"]}}
+{"ts_ms": 1772728474243, "event": "blocked_no_approval", "data": {"proposal_id": "trade-LSgBONfJkoQzA-lP", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728484254, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-dhZf0R05u4xQ5Zek"]}}
+{"ts_ms": 1772728484255, "event": "blocked_no_approval", "data": {"proposal_id": "trade-dhZf0R05u4xQ5Zek", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728494693, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-yiju2Y88Njt0HDPs"]}}
+{"ts_ms": 1772728494697, "event": "blocked_no_approval", "data": {"proposal_id": "trade-yiju2Y88Njt0HDPs", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728504710, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-i0H8D7C29RqMhIDv"]}}
+{"ts_ms": 1772728504711, "event": "blocked_no_approval", "data": {"proposal_id": "trade-i0H8D7C29RqMhIDv", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728514722, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Ve06oPmvxtfHZdWy"]}}
+{"ts_ms": 1772728514723, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Ve06oPmvxtfHZdWy", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728524738, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-OeRpL52ApZQhV4vF"]}}
+{"ts_ms": 1772728524739, "event": "blocked_no_approval", "data": {"proposal_id": "trade-OeRpL52ApZQhV4vF", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728534753, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-NBpJmgoBHcxA40SR"]}}
+{"ts_ms": 1772728534754, "event": "blocked_no_approval", "data": {"proposal_id": "trade-NBpJmgoBHcxA40SR", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728544765, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-eDbUM24oLfhuFw7f"]}}
+{"ts_ms": 1772728544765, "event": "blocked_no_approval", "data": {"proposal_id": "trade-eDbUM24oLfhuFw7f", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728554782, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-6vQJcRsPcWs0mw4w"]}}
+{"ts_ms": 1772728554783, "event": "blocked_no_approval", "data": {"proposal_id": "trade-6vQJcRsPcWs0mw4w", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728565275, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-QAI9X1QwYMwBHOev"]}}
+{"ts_ms": 1772728565276, "event": "blocked_no_approval", "data": {"proposal_id": "trade-QAI9X1QwYMwBHOev", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728575288, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-_Dj2Qcg0eQ2URwXM"]}}
+{"ts_ms": 1772728575289, "event": "blocked_no_approval", "data": {"proposal_id": "trade-_Dj2Qcg0eQ2URwXM", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728585301, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-a6sx38OMiVf6X6uR"]}}
+{"ts_ms": 1772728585302, "event": "blocked_no_approval", "data": {"proposal_id": "trade-a6sx38OMiVf6X6uR", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728595316, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-T0GPq9mObSwQUqc9"]}}
+{"ts_ms": 1772728595316, "event": "blocked_no_approval", "data": {"proposal_id": "trade-T0GPq9mObSwQUqc9", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728605327, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-d0eQzTF9Jjz7q9nd"]}}
+{"ts_ms": 1772728605328, "event": "blocked_no_approval", "data": {"proposal_id": "trade-d0eQzTF9Jjz7q9nd", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728615339, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-NmjHCcmIIXEWj1Z6"]}}
+{"ts_ms": 1772728615340, "event": "blocked_no_approval", "data": {"proposal_id": "trade-NmjHCcmIIXEWj1Z6", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728625801, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-o5fHhhz-XEhv4ZDR"]}}
+{"ts_ms": 1772728625802, "event": "blocked_no_approval", "data": {"proposal_id": "trade-o5fHhhz-XEhv4ZDR", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728635813, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-sKXzE9_6rujcbKDR"]}}
+{"ts_ms": 1772728635814, "event": "blocked_no_approval", "data": {"proposal_id": "trade-sKXzE9_6rujcbKDR", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728645823, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-uhqJBMAZLr1mgxTM"]}}
+{"ts_ms": 1772728645824, "event": "blocked_no_approval", "data": {"proposal_id": "trade-uhqJBMAZLr1mgxTM", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728655835, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-bty12iFQYNhvalrJ"]}}
+{"ts_ms": 1772728655836, "event": "blocked_no_approval", "data": {"proposal_id": "trade-bty12iFQYNhvalrJ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728666332, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-u7VSFbQEDD_81IiF"]}}
+{"ts_ms": 1772728666333, "event": "blocked_no_approval", "data": {"proposal_id": "trade-u7VSFbQEDD_81IiF", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728676344, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-HVbRsjaODh4Si9gI"]}}
+{"ts_ms": 1772728676344, "event": "blocked_no_approval", "data": {"proposal_id": "trade-HVbRsjaODh4Si9gI", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728686354, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-q8iQwjdxvp8_zaJ1"]}}
+{"ts_ms": 1772728686355, "event": "blocked_no_approval", "data": {"proposal_id": "trade-q8iQwjdxvp8_zaJ1", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728696370, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-m3ypTqzeAGcqEA5U"]}}
+{"ts_ms": 1772728696372, "event": "blocked_no_approval", "data": {"proposal_id": "trade-m3ypTqzeAGcqEA5U", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728706382, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-oUdAiRe1MIS0LuBN"]}}
+{"ts_ms": 1772728706383, "event": "blocked_no_approval", "data": {"proposal_id": "trade-oUdAiRe1MIS0LuBN", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728716397, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-wsRF1-UZhsBV6FJQ"]}}
+{"ts_ms": 1772728716399, "event": "blocked_no_approval", "data": {"proposal_id": "trade-wsRF1-UZhsBV6FJQ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728726835, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-EuUBmklNMF3uAVwt"]}}
+{"ts_ms": 1772728726837, "event": "blocked_no_approval", "data": {"proposal_id": "trade-EuUBmklNMF3uAVwt", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728736850, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-OI6wCKeQ9n3bup07"]}}
+{"ts_ms": 1772728736851, "event": "blocked_no_approval", "data": {"proposal_id": "trade-OI6wCKeQ9n3bup07", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728746860, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-kWA9RInQVuXxHuF8"]}}
+{"ts_ms": 1772728746861, "event": "blocked_no_approval", "data": {"proposal_id": "trade-kWA9RInQVuXxHuF8", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728757365, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-rVTKr_l6kuw287cQ"]}}
+{"ts_ms": 1772728757366, "event": "blocked_no_approval", "data": {"proposal_id": "trade-rVTKr_l6kuw287cQ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728767488, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-zFSO7YugyntoK_0A"]}}
+{"ts_ms": 1772728767527, "event": "blocked_no_approval", "data": {"proposal_id": "trade-zFSO7YugyntoK_0A", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728777553, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-RwNuHqoT2EcQE_dm"]}}
+{"ts_ms": 1772728777572, "event": "blocked_no_approval", "data": {"proposal_id": "trade-RwNuHqoT2EcQE_dm", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728787625, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-tgiq6WtFthYTjKbu"]}}
+{"ts_ms": 1772728787628, "event": "blocked_no_approval", "data": {"proposal_id": "trade-tgiq6WtFthYTjKbu", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728798095, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-hrhyCm4BdeLj_GBb"]}}
+{"ts_ms": 1772728798097, "event": "blocked_no_approval", "data": {"proposal_id": "trade-hrhyCm4BdeLj_GBb", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728808137, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Lq4GbzLWFEDT9hNE"]}}
+{"ts_ms": 1772728808139, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Lq4GbzLWFEDT9hNE", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728818150, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-XIbZSklyeVXa8fWc"]}}
+{"ts_ms": 1772728818151, "event": "blocked_no_approval", "data": {"proposal_id": "trade-XIbZSklyeVXa8fWc", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728828591, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-h8xYEmf1FquwKvK0"]}}
+{"ts_ms": 1772728828592, "event": "blocked_no_approval", "data": {"proposal_id": "trade-h8xYEmf1FquwKvK0", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728838603, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-wobHmKxfQkh7VnCa"]}}
+{"ts_ms": 1772728838603, "event": "blocked_no_approval", "data": {"proposal_id": "trade-wobHmKxfQkh7VnCa", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728848615, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-z8d-0q-laLQKpQdj"]}}
+{"ts_ms": 1772728848616, "event": "blocked_no_approval", "data": {"proposal_id": "trade-z8d-0q-laLQKpQdj", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728859066, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-VoGxsRu692KjQrAU"]}}
+{"ts_ms": 1772728859066, "event": "blocked_no_approval", "data": {"proposal_id": "trade-VoGxsRu692KjQrAU", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728869077, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-MMP4zFXwtNraQuDr"]}}
+{"ts_ms": 1772728869078, "event": "blocked_no_approval", "data": {"proposal_id": "trade-MMP4zFXwtNraQuDr", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728879090, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-GkDl6wDstWJmhcrT"]}}
+{"ts_ms": 1772728879091, "event": "blocked_no_approval", "data": {"proposal_id": "trade-GkDl6wDstWJmhcrT", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728889543, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-72bYX_mAXKaRY-IU"]}}
+{"ts_ms": 1772728889544, "event": "blocked_no_approval", "data": {"proposal_id": "trade-72bYX_mAXKaRY-IU", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728899556, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-PZt_-5JUKzN3XCRj"]}}
+{"ts_ms": 1772728899557, "event": "blocked_no_approval", "data": {"proposal_id": "trade-PZt_-5JUKzN3XCRj", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728909565, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-XnX2-vszbb4LQ2S0"]}}
+{"ts_ms": 1772728909566, "event": "blocked_no_approval", "data": {"proposal_id": "trade-XnX2-vszbb4LQ2S0", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728920022, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Zgb7A8N1J2lD77DZ"]}}
+{"ts_ms": 1772728920022, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Zgb7A8N1J2lD77DZ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728930031, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-0zJvlfKE3-0jU_sF"]}}
+{"ts_ms": 1772728930032, "event": "blocked_no_approval", "data": {"proposal_id": "trade-0zJvlfKE3-0jU_sF", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728940042, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-aofz8NSenyLcY14F"]}}
+{"ts_ms": 1772728940043, "event": "blocked_no_approval", "data": {"proposal_id": "trade-aofz8NSenyLcY14F", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728950056, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-j2HCgfASTDyLEldW"]}}
+{"ts_ms": 1772728950058, "event": "blocked_no_approval", "data": {"proposal_id": "trade-j2HCgfASTDyLEldW", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728960527, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Tf_nYDof8HVaVDWE"]}}
+{"ts_ms": 1772728960528, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Tf_nYDof8HVaVDWE", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728970541, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-N4PqLPsklaeiAdcx"]}}
+{"ts_ms": 1772728970542, "event": "blocked_no_approval", "data": {"proposal_id": "trade-N4PqLPsklaeiAdcx", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728980554, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-T6ymFgh_vF1ty4E4"]}}
+{"ts_ms": 1772728980555, "event": "blocked_no_approval", "data": {"proposal_id": "trade-T6ymFgh_vF1ty4E4", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772728991003, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-INH62TfgvF8Ad-t9"]}}
+{"ts_ms": 1772728991004, "event": "blocked_no_approval", "data": {"proposal_id": "trade-INH62TfgvF8Ad-t9", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729001016, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-C9AawzQf9yz7XcCX"]}}
+{"ts_ms": 1772729001017, "event": "blocked_no_approval", "data": {"proposal_id": "trade-C9AawzQf9yz7XcCX", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729011030, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-C4qLbJxHqeYGNIe3"]}}
+{"ts_ms": 1772729011031, "event": "blocked_no_approval", "data": {"proposal_id": "trade-C4qLbJxHqeYGNIe3", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729021046, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-m8nOQp5BiMmUFZl9"]}}
+{"ts_ms": 1772729021047, "event": "blocked_no_approval", "data": {"proposal_id": "trade-m8nOQp5BiMmUFZl9", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729031069, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-uhSj01c5gPgAubsI"]}}
+{"ts_ms": 1772729031070, "event": "blocked_no_approval", "data": {"proposal_id": "trade-uhSj01c5gPgAubsI", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729041081, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-DT7HiCARAn0k5pC6"]}}
+{"ts_ms": 1772729041082, "event": "blocked_no_approval", "data": {"proposal_id": "trade-DT7HiCARAn0k5pC6", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729051569, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-49c4IUakcs5_GeUk"]}}
+{"ts_ms": 1772729051569, "event": "blocked_no_approval", "data": {"proposal_id": "trade-49c4IUakcs5_GeUk", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729061580, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-hqbZiWMjzRILT1oz"]}}
+{"ts_ms": 1772729061581, "event": "blocked_no_approval", "data": {"proposal_id": "trade-hqbZiWMjzRILT1oz", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729071596, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-SDHfBV-Q6YEFRe7L"]}}
+{"ts_ms": 1772729071597, "event": "blocked_no_approval", "data": {"proposal_id": "trade-SDHfBV-Q6YEFRe7L", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729081608, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-kIn0wPBsj4RVimXs"]}}
+{"ts_ms": 1772729081610, "event": "blocked_no_approval", "data": {"proposal_id": "trade-kIn0wPBsj4RVimXs", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729092051, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smryNf-lye303Eq0"]}}
+{"ts_ms": 1772729092052, "event": "blocked_no_approval", "data": {"proposal_id": "trade-smryNf-lye303Eq0", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729102064, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-5aoKDIiq6jviGL2o"]}}
+{"ts_ms": 1772729102065, "event": "blocked_no_approval", "data": {"proposal_id": "trade-5aoKDIiq6jviGL2o", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729112075, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ZJwfefbcbePe1nnz"]}}
+{"ts_ms": 1772729112076, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ZJwfefbcbePe1nnz", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729122578, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-8UJ0wA3sukGl0BdY"]}}
+{"ts_ms": 1772729122579, "event": "blocked_no_approval", "data": {"proposal_id": "trade-8UJ0wA3sukGl0BdY", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729132588, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-bywxmLg3okyk16l-"]}}
+{"ts_ms": 1772729132588, "event": "blocked_no_approval", "data": {"proposal_id": "trade-bywxmLg3okyk16l-", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729142602, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-e4F164B-iqVzSqQ9"]}}
+{"ts_ms": 1772729142602, "event": "blocked_no_approval", "data": {"proposal_id": "trade-e4F164B-iqVzSqQ9", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729153056, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-P31-oo-ZXCQW7-1p"]}}
+{"ts_ms": 1772729153057, "event": "blocked_no_approval", "data": {"proposal_id": "trade-P31-oo-ZXCQW7-1p", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729163068, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-DozJjHxecmbCznDN"]}}
+{"ts_ms": 1772729163069, "event": "blocked_no_approval", "data": {"proposal_id": "trade-DozJjHxecmbCznDN", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729173076, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-4t2PdCbDXp_lHyam"]}}
+{"ts_ms": 1772729173077, "event": "blocked_no_approval", "data": {"proposal_id": "trade-4t2PdCbDXp_lHyam", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729183547, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-y0YaxvEQ1WybwcwT"]}}
+{"ts_ms": 1772729183548, "event": "blocked_no_approval", "data": {"proposal_id": "trade-y0YaxvEQ1WybwcwT", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729193558, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-A-z8j5FerIAVrf96"]}}
+{"ts_ms": 1772729193559, "event": "blocked_no_approval", "data": {"proposal_id": "trade-A-z8j5FerIAVrf96", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729203569, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-SUcno-C1wHcYN6ik"]}}
+{"ts_ms": 1772729203570, "event": "blocked_no_approval", "data": {"proposal_id": "trade-SUcno-C1wHcYN6ik", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729214087, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-QUV7sswEMVV9IwQB"]}}
+{"ts_ms": 1772729214088, "event": "blocked_no_approval", "data": {"proposal_id": "trade-QUV7sswEMVV9IwQB", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729224105, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-mQEF8FLe3W3zf_Su"]}}
+{"ts_ms": 1772729224106, "event": "blocked_no_approval", "data": {"proposal_id": "trade-mQEF8FLe3W3zf_Su", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729234119, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-LPm6Cpq3rh0dpS81"]}}
+{"ts_ms": 1772729234120, "event": "blocked_no_approval", "data": {"proposal_id": "trade-LPm6Cpq3rh0dpS81", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729244129, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-gJqa04dxqEEpIfW7"]}}
+{"ts_ms": 1772729244130, "event": "blocked_no_approval", "data": {"proposal_id": "trade-gJqa04dxqEEpIfW7", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729254644, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-EvHEPtpaHMqGuSKG"]}}
+{"ts_ms": 1772729254645, "event": "blocked_no_approval", "data": {"proposal_id": "trade-EvHEPtpaHMqGuSKG", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729264655, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-mTcK-QKbfqBBvsRV"]}}
+{"ts_ms": 1772729264655, "event": "blocked_no_approval", "data": {"proposal_id": "trade-mTcK-QKbfqBBvsRV", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729274666, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-uaSyzu2ELEzMw2zj"]}}
+{"ts_ms": 1772729274667, "event": "blocked_no_approval", "data": {"proposal_id": "trade-uaSyzu2ELEzMw2zj", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729285268, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-8hBnGUaK2BXEDzab"]}}
+{"ts_ms": 1772729285269, "event": "blocked_no_approval", "data": {"proposal_id": "trade-8hBnGUaK2BXEDzab", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729295276, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-9_HXo5tDNnTnmTq0"]}}
+{"ts_ms": 1772729295277, "event": "blocked_no_approval", "data": {"proposal_id": "trade-9_HXo5tDNnTnmTq0", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729305286, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-zqsi-YRsPNkspNfj"]}}
+{"ts_ms": 1772729305287, "event": "blocked_no_approval", "data": {"proposal_id": "trade-zqsi-YRsPNkspNfj", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729315804, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-VJf2UAc3YiTsz6Y6"]}}
+{"ts_ms": 1772729315804, "event": "blocked_no_approval", "data": {"proposal_id": "trade-VJf2UAc3YiTsz6Y6", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729325814, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-dox8kPSi6g4FH8iV"]}}
+{"ts_ms": 1772729325815, "event": "blocked_no_approval", "data": {"proposal_id": "trade-dox8kPSi6g4FH8iV", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729335826, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-gY3BTafGd_AVuCha"]}}
+{"ts_ms": 1772729335827, "event": "blocked_no_approval", "data": {"proposal_id": "trade-gY3BTafGd_AVuCha", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729346371, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-2gBlxq2y4P9lJ5Mn"]}}
+{"ts_ms": 1772729346372, "event": "blocked_no_approval", "data": {"proposal_id": "trade-2gBlxq2y4P9lJ5Mn", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729356381, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-huoA48e-CMeYq5Yn"]}}
+{"ts_ms": 1772729356382, "event": "blocked_no_approval", "data": {"proposal_id": "trade-huoA48e-CMeYq5Yn", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729366390, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-mwA6KWJwqqcTS8I8"]}}
+{"ts_ms": 1772729366391, "event": "blocked_no_approval", "data": {"proposal_id": "trade-mwA6KWJwqqcTS8I8", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729376400, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-KHxxKVMMPhJb5825"]}}
+{"ts_ms": 1772729376401, "event": "blocked_no_approval", "data": {"proposal_id": "trade-KHxxKVMMPhJb5825", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729386875, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ttAwAs-LCn5Ofjre"]}}
+{"ts_ms": 1772729386876, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ttAwAs-LCn5Ofjre", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729396885, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-GUc9swxuj6KBDdEM"]}}
+{"ts_ms": 1772729396887, "event": "blocked_no_approval", "data": {"proposal_id": "trade-GUc9swxuj6KBDdEM", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729406896, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-k3ql_so-DXcLikjW"]}}
+{"ts_ms": 1772729406896, "event": "blocked_no_approval", "data": {"proposal_id": "trade-k3ql_so-DXcLikjW", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729417438, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-vuOLjMcnpJBhbT49"]}}
+{"ts_ms": 1772729417439, "event": "blocked_no_approval", "data": {"proposal_id": "trade-vuOLjMcnpJBhbT49", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729427451, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Ed_NGQ-EQ7aC9YsT"]}}
+{"ts_ms": 1772729427456, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Ed_NGQ-EQ7aC9YsT", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729437467, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-E6EJynre4vZSYNNt"]}}
+{"ts_ms": 1772729437467, "event": "blocked_no_approval", "data": {"proposal_id": "trade-E6EJynre4vZSYNNt", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729447986, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ehtQqUveIgbKTep3"]}}
+{"ts_ms": 1772729447987, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ehtQqUveIgbKTep3", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729457995, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-rl9ngM1RT-b7HQEn"]}}
+{"ts_ms": 1772729457997, "event": "blocked_no_approval", "data": {"proposal_id": "trade-rl9ngM1RT-b7HQEn", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729468006, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-JmyEn3ymvcfjG21-"]}}
+{"ts_ms": 1772729468007, "event": "blocked_no_approval", "data": {"proposal_id": "trade-JmyEn3ymvcfjG21-", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729478524, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-YSJSj6DbORZVXxrP"]}}
+{"ts_ms": 1772729478524, "event": "blocked_no_approval", "data": {"proposal_id": "trade-YSJSj6DbORZVXxrP", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729488535, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Afu8Gh-zL-duy-NO"]}}
+{"ts_ms": 1772729488536, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Afu8Gh-zL-duy-NO", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729498550, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-G7sBs6O8__GGMshD"]}}
+{"ts_ms": 1772729498553, "event": "blocked_no_approval", "data": {"proposal_id": "trade-G7sBs6O8__GGMshD", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729508566, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-b4rX1v9Ua1bCER2X"]}}
+{"ts_ms": 1772729508567, "event": "blocked_no_approval", "data": {"proposal_id": "trade-b4rX1v9Ua1bCER2X", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729519095, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-kmEOfdaP2aLiSI8b"]}}
+{"ts_ms": 1772729519097, "event": "blocked_no_approval", "data": {"proposal_id": "trade-kmEOfdaP2aLiSI8b", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729529107, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-1XXAnKNuB-QGx6pF"]}}
+{"ts_ms": 1772729529108, "event": "blocked_no_approval", "data": {"proposal_id": "trade-1XXAnKNuB-QGx6pF", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729539117, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-GACLiiFSCxjjr9og"]}}
+{"ts_ms": 1772729539118, "event": "blocked_no_approval", "data": {"proposal_id": "trade-GACLiiFSCxjjr9og", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729549602, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-vE23M9ZCZiWD4-16"]}}
+{"ts_ms": 1772729549603, "event": "blocked_no_approval", "data": {"proposal_id": "trade-vE23M9ZCZiWD4-16", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729559614, "event": "proposals_created", "data": {"count": 1, "ids": ["trade--6tEKmJg3tOs7_Qq"]}}
+{"ts_ms": 1772729559615, "event": "blocked_no_approval", "data": {"proposal_id": "trade--6tEKmJg3tOs7_Qq", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729569626, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-UhsIWRGE_ItgOpvy"]}}
+{"ts_ms": 1772729569627, "event": "blocked_no_approval", "data": {"proposal_id": "trade-UhsIWRGE_ItgOpvy", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729580115, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-XfwWo83UDRo429Jf"]}}
+{"ts_ms": 1772729580116, "event": "blocked_no_approval", "data": {"proposal_id": "trade-XfwWo83UDRo429Jf", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729590127, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-c1SrYJ_pFDD8coLv"]}}
+{"ts_ms": 1772729590127, "event": "blocked_no_approval", "data": {"proposal_id": "trade-c1SrYJ_pFDD8coLv", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729600138, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-W_MBNLfMDGDOX0oM"]}}
+{"ts_ms": 1772729600139, "event": "blocked_no_approval", "data": {"proposal_id": "trade-W_MBNLfMDGDOX0oM", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729610670, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-nJGT80JYh1l8fkXy"]}}
+{"ts_ms": 1772729610670, "event": "blocked_no_approval", "data": {"proposal_id": "trade-nJGT80JYh1l8fkXy", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729620682, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-c6tS102o6c7mNzOJ"]}}
+{"ts_ms": 1772729620683, "event": "blocked_no_approval", "data": {"proposal_id": "trade-c6tS102o6c7mNzOJ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729630695, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-ukBVo1F-tUBGtXQN"]}}
+{"ts_ms": 1772729630696, "event": "blocked_no_approval", "data": {"proposal_id": "trade-ukBVo1F-tUBGtXQN", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729641235, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-jOBpHIZHvl9NLRWZ"]}}
+{"ts_ms": 1772729641236, "event": "blocked_no_approval", "data": {"proposal_id": "trade-jOBpHIZHvl9NLRWZ", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729651244, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-PTRDpaXF7m_F485u"]}}
+{"ts_ms": 1772729651245, "event": "blocked_no_approval", "data": {"proposal_id": "trade-PTRDpaXF7m_F485u", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729661257, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-9hXzRt3GfQVdmEPv"]}}
+{"ts_ms": 1772729661258, "event": "blocked_no_approval", "data": {"proposal_id": "trade-9hXzRt3GfQVdmEPv", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729671264, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-zNIlxn9y9FWT2qGe"]}}
+{"ts_ms": 1772729671265, "event": "blocked_no_approval", "data": {"proposal_id": "trade-zNIlxn9y9FWT2qGe", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729681776, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Z-RfalQN5I-FLvmH"]}}
+{"ts_ms": 1772729681777, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Z-RfalQN5I-FLvmH", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729691786, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-lh4498Mp2V2qUuXh"]}}
+{"ts_ms": 1772729691787, "event": "blocked_no_approval", "data": {"proposal_id": "trade-lh4498Mp2V2qUuXh", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729701796, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-FnA-diQiHVPda0QF"]}}
+{"ts_ms": 1772729701797, "event": "blocked_no_approval", "data": {"proposal_id": "trade-FnA-diQiHVPda0QF", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729712302, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-qKlUp6wmJjisMoxM"]}}
+{"ts_ms": 1772729712303, "event": "blocked_no_approval", "data": {"proposal_id": "trade-qKlUp6wmJjisMoxM", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729722313, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-e9OiSmVobiH5n1Xb"]}}
+{"ts_ms": 1772729722313, "event": "blocked_no_approval", "data": {"proposal_id": "trade-e9OiSmVobiH5n1Xb", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729732322, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-9N8eDTqvw_vhIJQ4"]}}
+{"ts_ms": 1772729732322, "event": "blocked_no_approval", "data": {"proposal_id": "trade-9N8eDTqvw_vhIJQ4", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729742882, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-V5wzPVyO1--MbKd5"]}}
+{"ts_ms": 1772729742883, "event": "blocked_no_approval", "data": {"proposal_id": "trade-V5wzPVyO1--MbKd5", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729752892, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-JFdq9RC5dHS5FYhP"]}}
+{"ts_ms": 1772729752893, "event": "blocked_no_approval", "data": {"proposal_id": "trade-JFdq9RC5dHS5FYhP", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729762902, "event": "proposals_created", "data": {"count": 1, "ids": ["trade--QZbOArh4II_KGjp"]}}
+{"ts_ms": 1772729762903, "event": "blocked_no_approval", "data": {"proposal_id": "trade--QZbOArh4II_KGjp", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729773423, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-iNfS2HoE_ve_zYIE"]}}
+{"ts_ms": 1772729773424, "event": "blocked_no_approval", "data": {"proposal_id": "trade-iNfS2HoE_ve_zYIE", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729783439, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-0S6kY3zc2UzmEfGw"]}}
+{"ts_ms": 1772729783439, "event": "blocked_no_approval", "data": {"proposal_id": "trade-0S6kY3zc2UzmEfGw", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729793449, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-d2XAmxaZbG6gKXDx"]}}
+{"ts_ms": 1772729793449, "event": "blocked_no_approval", "data": {"proposal_id": "trade-d2XAmxaZbG6gKXDx", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729803461, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-YJu_-Wy5cQvQ2942"]}}
+{"ts_ms": 1772729803461, "event": "blocked_no_approval", "data": {"proposal_id": "trade-YJu_-Wy5cQvQ2942", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729813977, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Q9aJcSUupPe0aooe"]}}
+{"ts_ms": 1772729813977, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Q9aJcSUupPe0aooe", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729823989, "event": "proposals_created", "data": {"count": 1, "ids": ["trade--RXfTYrnWmbTKi2x"]}}
+{"ts_ms": 1772729823989, "event": "blocked_no_approval", "data": {"proposal_id": "trade--RXfTYrnWmbTKi2x", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729834002, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-MTM6YaZGnF8AGFgV"]}}
+{"ts_ms": 1772729834003, "event": "blocked_no_approval", "data": {"proposal_id": "trade-MTM6YaZGnF8AGFgV", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729844436, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-66sckYUicUmFVxZf"]}}
+{"ts_ms": 1772729844440, "event": "blocked_no_approval", "data": {"proposal_id": "trade-66sckYUicUmFVxZf", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729854453, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-o8tCG6V827UQVu11"]}}
+{"ts_ms": 1772729854454, "event": "blocked_no_approval", "data": {"proposal_id": "trade-o8tCG6V827UQVu11", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729864464, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-behZY06JRSkJMN7l"]}}
+{"ts_ms": 1772729864465, "event": "blocked_no_approval", "data": {"proposal_id": "trade-behZY06JRSkJMN7l", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729875001, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-1i-i5zXo3FwUL4-P"]}}
+{"ts_ms": 1772729875002, "event": "blocked_no_approval", "data": {"proposal_id": "trade-1i-i5zXo3FwUL4-P", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729885025, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-Duv0RBsCp2ZrTASU"]}}
+{"ts_ms": 1772729885026, "event": "blocked_no_approval", "data": {"proposal_id": "trade-Duv0RBsCp2ZrTASU", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729895045, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-4uv08QBWBsRlAWyG"]}}
+{"ts_ms": 1772729895046, "event": "blocked_no_approval", "data": {"proposal_id": "trade-4uv08QBWBsRlAWyG", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729905649, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-83dUV50IeGCkxisT"]}}
+{"ts_ms": 1772729905653, "event": "blocked_no_approval", "data": {"proposal_id": "trade-83dUV50IeGCkxisT", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729915683, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-y0Y3xNT444Eh3lcl"]}}
+{"ts_ms": 1772729915684, "event": "blocked_no_approval", "data": {"proposal_id": "trade-y0Y3xNT444Eh3lcl", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772729925697, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-lRxeFdYf8fcyTWSa"]}}
+{"ts_ms": 1772729925699, "event": "blocked_no_approval", "data": {"proposal_id": "trade-lRxeFdYf8fcyTWSa", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772730456051, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730456054, "event": "blocked_no_approval", "data": {"proposal_id": "trade-smoke-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772730466069, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730466070, "event": "blocked_no_approval", "data": {"proposal_id": "trade-smoke-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772730476083, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730476084, "event": "blocked_no_approval", "data": {"proposal_id": "trade-smoke-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772730486105, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730486106, "event": "blocked_no_approval", "data": {"proposal_id": "trade-smoke-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772730496122, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730496123, "event": "blocked_no_approval", "data": {"proposal_id": "trade-smoke-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772730506141, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730506142, "event": "blocked_no_approval", "data": {"proposal_id": "trade-smoke-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772730516152, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730516152, "event": "blocked_no_approval", "data": {"proposal_id": "trade-smoke-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772730526165, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730526165, "event": "blocked_no_approval", "data": {"proposal_id": "trade-smoke-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}}}
+{"ts_ms": 1772730642866, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730642867, "event": "dry_run_trade", "data": {"proposal_id": "trade-smoke-fixed-0001", "payload": {"symbol": "ETH-USD", "side": "buy", "qty": 0.001}, "reason": "smoke test strategy"}}
+{"ts_ms": 1772730652885, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730652886, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730662900, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730662902, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730672925, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730672926, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730682938, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730682938, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730692950, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730692951, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730702961, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730702962, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730712973, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730712974, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730722985, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730722986, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730732996, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730732997, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730743009, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730743010, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730753030, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730753031, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730763055, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730763055, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730773103, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730773104, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730783114, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730783114, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730793125, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730793126, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730803135, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730803136, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730813151, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730813152, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730823161, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730823162, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772730833174, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772730833174, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772731211412, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772731211413, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772732150267, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772732150280, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}
+{"ts_ms": 1772734751033, "event": "proposals_created", "data": {"count": 1, "ids": ["trade-smoke-fixed-0001"]}}
+{"ts_ms": 1772734751045, "event": "blocked_idempotent_replay", "data": {"proposal_id": "trade-smoke-fixed-0001"}}

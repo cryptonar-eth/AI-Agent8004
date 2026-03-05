@@ -11,8 +11,14 @@ class TradingPolicy:
     def decide(self, snap: MarketSnapshot) -> list[Proposal]:
         return []
 
-def new_trade_proposal(symbol: str, side: str, qty: float, reason: str) -> Proposal:
-    pid = f"trade-{secrets.token_urlsafe(12)}"
+def new_trade_proposal(
+    symbol: str,
+    side: str,
+    qty: float,
+    reason: str,
+    proposal_id: str | None = None,
+) -> Proposal:
+    pid = proposal_id or f"trade-{secrets.token_urlsafe(12)}"
     return Proposal(
         proposal_id=pid,
         type=ProposalType.TRADE,
