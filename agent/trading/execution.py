@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+from decimal import Decimal
+
 from agent.config.settings import Settings
+from agent.engine.rust_guard import RustOrderProposal, validate_with_rust
 from agent.core.proposals import Proposal, ProposalType
 from agent.governance.approvals import is_approved, validate_proposal_id
 from agent.governance.policy import check_trade, check_trade_bundle
@@ -102,6 +105,36 @@ class Executor:
                 {"proposal_id": proposal.proposal_id, "reason": rd.reason, "notional_usd": est_notional_usd},
             )
             print(f"[EXEC] BLOCKED: risk: {rd.reason}")
+            return
+
+        # Rust risk gate: Python proposes, Rust must approve.
+        # This is intentionally stricter than the Python autonomy flag:
+        # the Rust engine requires an actual approval file and dry_run=True.
+        rust_decision = validate_with_rust(
+            RustOrderProposal(
+                proposal_id=proposal.proposal_id,
+                symbol=symbol,
+                side=side,
+                qty=Decimal(str(qty)),
+                price=Decimal(str(price)),
+                intent="DRY_RUN_ORDER",
+                dry_run=self.settings.dry_run,
+                approved=is_approved(proposal.proposal_id),
+            )
+        )
+
+        log(
+            "rust_risk_decision",
+            {
+                "proposal_id": proposal.proposal_id,
+                "decision": rust_decision,
+                "payload": proposal.payload,
+            },
+        )
+
+        if not bool(rust_decision.get("allowed", False)):
+            reason = str(rust_decision.get("reason", "Rust risk engine denied proposal"))
+            print(f"[EXEC] BLOCKED: rust risk: {reason}")
             return
 
         if self.settings.dry_run:
