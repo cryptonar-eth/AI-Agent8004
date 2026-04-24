@@ -14,3 +14,10 @@ __pycache__/
 *.seed
 secrets/
 *.egg-info/
+# Rust build outputs
+engine/novanexus_engine/target/
+# Local Python/Rust build artifacts
+*.so
+*.pyd
+*.dll
+*.dylib

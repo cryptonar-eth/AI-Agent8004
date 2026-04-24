@@ -24,3 +24,12 @@ lint.ignore = ["S101"]
 [tool.mypy]
 python_version = "3.12"
 strict = true
+
+[tool.setuptools.packages.find]
+include = ["agent*"]
+exclude = [
+  "logs*",
+  "approvals*",
+  "recovered_ai_agent8004_clean*",
+  "ai_agent8004.egg-info*",
+]
