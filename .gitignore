@@ -23,3 +23,6 @@ engine/novanexus_engine/target/
 *.dylib
 dist/
 engine/novanexus_engine/dist/
+# Runtime approval files
+approvals/*.approved
+approvals/KILL_SWITCH
