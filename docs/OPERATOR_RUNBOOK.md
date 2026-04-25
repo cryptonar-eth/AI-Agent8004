@@ -14,6 +14,7 @@ Before every commit or push, run:
 
     cd ~/projects/NovaNexus
     source .venv/bin/activate
+    ./scripts/reset_runtime.sh
     ./scripts/security_check.sh
 
 Expected result:
@@ -61,9 +62,7 @@ This is still not real trading.
 
 ## Clean Runtime Files
 
-    rm -f approvals/trade-demo-fixed-0001.approved
-    rm -f approvals/langgraph-smoke-0001.approved
-    git restore logs/audit.jsonl logs/state.json 2>/dev/null || true
+    ./scripts/reset_runtime.sh
 
 ## Clean Git Status
 
