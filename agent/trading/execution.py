@@ -5,6 +5,7 @@ from decimal import Decimal
 from agent.config.settings import Settings
 from agent.engine.rust_guard import RustOrderProposal, validate_with_rust
 from agent.core.proposals import Proposal, ProposalType
+from agent.core.validation import validate_proposal_shape
 from agent.governance.approvals import is_approved, validate_proposal_id
 from agent.governance.policy import check_trade, check_trade_bundle
 from agent.ops.killswitch import is_killed
@@ -59,6 +60,20 @@ class Executor:
         if proposal.proposal_id in (state.executed_proposal_ids or []):
             log("blocked_idempotent_replay", {"proposal_id": proposal.proposal_id})
             print("[EXEC] BLOCKED: proposal already executed (idempotent)")
+            return
+
+        ok, reason = validate_proposal_shape(proposal)
+        if not ok:
+            log(
+                "blocked_invalid_proposal_shape",
+                {
+                    "proposal_id": proposal.proposal_id,
+                    "type": proposal.type,
+                    "reason": reason,
+                    "payload": proposal.payload,
+                },
+            )
+            print(f"[EXEC] BLOCKED: invalid proposal shape: {reason}")
             return
 
         autonomy = self._autonomy_enabled()

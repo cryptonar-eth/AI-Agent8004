@@ -85,3 +85,26 @@ def test_executor_blocks_real_execution_even_with_approval(
     captured = capsys.readouterr()
     assert "BLOCKED: rust risk" in captured.out
     assert "real trading is disabled" in captured.out
+
+
+def test_executor_blocks_invalid_payload_before_approval(tmp_path: Path, monkeypatch, capsys) -> None:
+    monkeypatch.chdir(tmp_path)
+
+    proposal = Proposal(
+        proposal_id="trade-test-invalidshape-0001",
+        type=ProposalType.TRADE,
+        payload={
+            "symbol": "ETH-USD",
+            "side": "hold",
+            "qty": 0.005,
+            "price_usd": 3500.0,
+        },
+        reason="invalid side should be blocked before approval",
+    )
+
+    executor = Executor(Settings(dry_run=True))
+    executor.execute(proposal)
+
+    captured = capsys.readouterr()
+    assert "BLOCKED: invalid proposal shape" in captured.out
+    assert "side" in captured.out
