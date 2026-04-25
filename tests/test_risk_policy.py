@@ -69,3 +69,12 @@ def test_policy_rejects_missing_dry_run_intent(tmp_path: Path) -> None:
 
     with pytest.raises(ValueError, match="DRY_RUN_ORDER"):
         load_risk_policy(_write_policy(tmp_path, data))
+
+
+def test_default_risk_policy_loads_after_chdir(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.chdir(tmp_path)
+
+    policy = load_risk_policy()
+
+    assert policy.mode == "dry_run_only"
+    assert "ETH-USD" in policy.allowed_symbols

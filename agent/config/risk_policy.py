@@ -6,7 +6,8 @@ from decimal import Decimal
 from pathlib import Path
 
 
-DEFAULT_RISK_POLICY_PATH = Path("config/risk_policy.example.json")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_RISK_POLICY_PATH = PROJECT_ROOT / "config/risk_policy.example.json"
 
 
 @dataclass(frozen=True)
