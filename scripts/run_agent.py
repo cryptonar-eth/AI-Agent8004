@@ -35,7 +35,7 @@ def main() -> None:
 
     if not (settings.auto_execute_trades and settings.auto_execute_ack):
         print("\nTo approve the demo proposal, run:")
-        print(f"  touch approvals/{demo.proposal_id}.approved")
+        print("  python scripts/approve_trade_demo.py")
         print("Then run the script again.\n")
     else:
         print("\nAutonomy enabled (AUTO_EXECUTE_TRADES + AUTO_EXECUTE_ACK). No approval file is required.\n")

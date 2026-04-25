@@ -28,7 +28,7 @@ echo "$NO_APPROVAL_OUTPUT" | grep -q "BLOCKED: not approved"
 
 echo
 echo "=== 5. Verify approval still only dry-runs ==="
-touch approvals/trade-demo-fixed-0001.approved
+python scripts/approve_trade_demo.py
 APPROVED_OUTPUT="$(python scripts/run_agent.py)"
 echo "$APPROVED_OUTPUT"
 

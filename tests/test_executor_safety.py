@@ -4,7 +4,7 @@ from pathlib import Path
 
 from agent.config.settings import Settings
 from agent.core.proposals import Proposal, ProposalType
-from agent.governance.approvals import write_approval
+from agent.governance.approvals import write_proposal_approval
 from agent.trading.execution import Executor
 
 
@@ -36,7 +36,7 @@ def test_executor_dry_run_with_approval(tmp_path: Path, monkeypatch, capsys) -> 
     monkeypatch.chdir(tmp_path)
 
     proposal = _trade_proposal("trade-test-approved-0001")
-    write_approval(proposal.proposal_id)
+    write_proposal_approval(proposal)
 
     executor = Executor(Settings(dry_run=True))
     executor.execute(proposal)
@@ -60,7 +60,7 @@ def test_executor_blocks_bad_symbol_even_with_approval(tmp_path: Path, monkeypat
         },
         reason="pytest bad symbol proposal",
     )
-    write_approval(proposal.proposal_id)
+    write_proposal_approval(proposal)
 
     executor = Executor(Settings(dry_run=True))
     executor.execute(proposal)
@@ -77,7 +77,7 @@ def test_executor_blocks_real_execution_even_with_approval(
     monkeypatch.chdir(tmp_path)
 
     proposal = _trade_proposal("trade-test-realexec-0001")
-    write_approval(proposal.proposal_id)
+    write_proposal_approval(proposal)
 
     executor = Executor(Settings(dry_run=False))
     executor.execute(proposal)

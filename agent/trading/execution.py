@@ -6,7 +6,7 @@ from agent.config.settings import Settings
 from agent.engine.rust_guard import RustOrderProposal, validate_with_rust
 from agent.core.proposals import Proposal, ProposalType
 from agent.core.validation import validate_proposal_shape
-from agent.governance.approvals import is_approved, validate_proposal_id
+from agent.governance.approvals import is_approved_for_proposal, validate_proposal_id
 from agent.governance.policy import check_trade, check_trade_bundle
 from agent.ops.killswitch import is_killed
 from agent.ops.audit import log
@@ -80,7 +80,7 @@ class Executor:
 
         # Approval gate (for everything that can execute)
         if not autonomy:
-            if not is_approved(proposal.proposal_id):
+            if not is_approved_for_proposal(proposal):
                 log("blocked_no_approval", {"proposal_id": proposal.proposal_id, "payload": proposal.payload})
                 print(f"[EXEC] BLOCKED: not approved. Create approvals/{proposal.proposal_id}.approved")
                 return
@@ -134,7 +134,7 @@ class Executor:
                 price=Decimal(str(price)),
                 intent="DRY_RUN_ORDER",
                 dry_run=self.settings.dry_run,
-                approved=is_approved(proposal.proposal_id),
+                approved=is_approved_for_proposal(proposal),
             )
         )
 
