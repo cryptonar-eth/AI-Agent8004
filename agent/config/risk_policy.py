@@ -17,6 +17,7 @@ class RiskPolicy:
     allowed_symbols: frozenset[str]
     max_qty_by_symbol: dict[str, Decimal]
     allowed_intents: frozenset[str]
+    allowed_sides: frozenset[str]
     require_manual_approval: bool
     require_price: bool
     live_trading_enabled: bool
@@ -27,6 +28,7 @@ def load_risk_policy(path: Path = DEFAULT_RISK_POLICY_PATH) -> RiskPolicy:
 
     allowed_symbols = frozenset(str(symbol) for symbol in raw["allowed_symbols"])
     allowed_intents = frozenset(str(intent) for intent in raw["allowed_intents"])
+    allowed_sides = frozenset(str(side) for side in raw["allowed_sides"])
 
     max_qty_by_symbol = {
         str(symbol): Decimal(str(qty))
@@ -39,6 +41,7 @@ def load_risk_policy(path: Path = DEFAULT_RISK_POLICY_PATH) -> RiskPolicy:
         allowed_symbols=allowed_symbols,
         max_qty_by_symbol=max_qty_by_symbol,
         allowed_intents=allowed_intents,
+        allowed_sides=allowed_sides,
         require_manual_approval=bool(raw["require_manual_approval"]),
         require_price=bool(raw["require_price"]),
         live_trading_enabled=bool(raw["live_trading_enabled"]),
@@ -69,6 +72,9 @@ def validate_risk_policy(policy: RiskPolicy) -> None:
 
     if "DRY_RUN_ORDER" not in policy.allowed_intents:
         raise ValueError("DRY_RUN_ORDER intent must be allowed")
+
+    if policy.allowed_sides != frozenset({"buy", "sell"}):
+        raise ValueError("allowed sides must be exactly buy and sell")
 
     for symbol in policy.allowed_symbols:
         if symbol not in policy.max_qty_by_symbol:

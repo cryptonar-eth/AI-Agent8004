@@ -1,12 +1,20 @@
 {
   "version": 1,
   "mode": "dry_run_only",
-  "allowed_symbols": ["ETH-USD"],
+  "allowed_symbols": [
+    "ETH-USD"
+  ],
   "max_qty_by_symbol": {
     "ETH-USD": "0.01"
   },
-  "allowed_intents": ["DRY_RUN_ORDER"],
+  "allowed_intents": [
+    "DRY_RUN_ORDER"
+  ],
   "require_manual_approval": true,
   "require_price": true,
-  "live_trading_enabled": false
+  "live_trading_enabled": false,
+  "allowed_sides": [
+    "buy",
+    "sell"
+  ]
 }

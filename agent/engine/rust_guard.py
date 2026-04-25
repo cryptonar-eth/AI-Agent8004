@@ -65,6 +65,9 @@ def _validate_against_policy(
             "only DRY_RUN_ORDER intent is allowed by policy",
         )
 
+    if proposal.side not in policy.allowed_sides:
+        return _policy_deny(proposal.proposal_id, "side not allowed by policy")
+
     if not proposal.dry_run:
         return _policy_deny(proposal.proposal_id, "real trading is disabled by policy")
 

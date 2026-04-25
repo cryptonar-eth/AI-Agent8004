@@ -22,6 +22,7 @@ def _valid_policy() -> dict:
         "allowed_symbols": ["ETH-USD"],
         "max_qty_by_symbol": {"ETH-USD": "0.01"},
         "allowed_intents": ["DRY_RUN_ORDER"],
+        "allowed_sides": ["buy", "sell"],
         "require_manual_approval": True,
         "require_price": True,
         "live_trading_enabled": False,
@@ -35,6 +36,7 @@ def test_load_default_risk_policy() -> None:
     assert policy.mode == "dry_run_only"
     assert policy.allowed_symbols == frozenset({"ETH-USD"})
     assert policy.max_qty_by_symbol["ETH-USD"] == Decimal("0.01")
+    assert policy.allowed_sides == frozenset({"buy", "sell"})
     assert policy.require_manual_approval is True
     assert policy.live_trading_enabled is False
 
@@ -78,3 +80,12 @@ def test_default_risk_policy_loads_after_chdir(tmp_path: Path, monkeypatch) -> N
 
     assert policy.mode == "dry_run_only"
     assert "ETH-USD" in policy.allowed_symbols
+
+
+
+def test_policy_rejects_bad_allowed_sides(tmp_path: Path) -> None:
+    data = _valid_policy()
+    data["allowed_sides"] = ["buy"]
+
+    with pytest.raises(ValueError, match="allowed sides"):
+        load_risk_policy(_write_policy(tmp_path, data))

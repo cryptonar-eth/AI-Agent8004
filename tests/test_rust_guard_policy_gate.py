@@ -78,3 +78,22 @@ def test_valid_policy_proposal_still_reaches_rust_gate() -> None:
 
     assert decision["allowed"] is True
     assert decision["engine"] == "novanexus_rust_engine_v0.1"
+
+
+def test_python_policy_gate_denies_bad_side_before_rust() -> None:
+    proposal = RustOrderProposal(
+        proposal_id="policy-badside-0001",
+        symbol="ETH-USD",
+        side="hold",
+        qty=Decimal("0.001"),
+        price=Decimal("2500.00"),
+        intent="DRY_RUN_ORDER",
+        dry_run=True,
+        approved=True,
+    )
+
+    decision = validate_with_rust(proposal)
+
+    assert decision["allowed"] is False
+    assert decision["engine"] == "novanexus_python_policy_gate_v0.1"
+    assert "side not allowed" in decision["reason"]
