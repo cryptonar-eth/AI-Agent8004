@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import time
 from typing import Any, TypedDict
 
 from langgraph.graph import END, START, StateGraph
@@ -8,6 +7,7 @@ from langgraph.graph import END, START, StateGraph
 from agent.config.settings import load_settings
 from agent.core.proposals import Proposal
 from agent.core.types import MarketSnapshot
+from agent.data.market_data import StaticMarketDataProvider
 from agent.governance.approvals import approval_path
 from agent.trading.execution import Executor
 from agent.trading.policy import new_trade_proposal
@@ -26,11 +26,8 @@ def build_snapshot(state: BrainState) -> BrainState:
     symbol = state.get("symbol", "ETH-USD")
     mid = float(state.get("mid", 3500.0))
 
-    snapshot = MarketSnapshot(
-        symbol=symbol,
-        ts_ms=int(time.time() * 1000),
-        mid=mid,
-    )
+    provider = StaticMarketDataProvider({symbol: mid})
+    snapshot = provider.get_snapshot(symbol)
 
     return {
         "snapshot": snapshot,
