@@ -39,6 +39,6 @@ jobs:
         run: |
           python -m pip install --force-reinstall dist/novanexus_engine-*.whl
 
-      - name: Run safety tests
+      - name: Run NovaNexus security smoke check
         run: |
-          pytest -q
+          ./scripts/security_check.sh
