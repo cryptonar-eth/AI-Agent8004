@@ -10,7 +10,8 @@ from agent.core.types import MarketSnapshot
 from agent.data.market_data import StaticMarketDataProvider
 from agent.governance.approvals import approval_path
 from agent.trading.execution import Executor
-from agent.trading.policy import new_trade_proposal
+from agent.strategies.base import StrategyContext
+from agent.strategies.registry import build_strategies
 
 
 class BrainState(TypedDict, total=False):
@@ -37,18 +38,18 @@ def build_snapshot(state: BrainState) -> BrainState:
 
 def create_proposal(state: BrainState) -> BrainState:
     snapshot = state["snapshot"]
-    proposal_id = state.get("proposal_id", "langgraph-smoke-0001")
 
-    proposal = new_trade_proposal(
-        snapshot.symbol,
-        "buy",
-        0.005,
-        "LangGraph smoke proposal; execution must pass executor and Rust gate",
-        proposal_id=proposal_id,
-    )
+    # Strategy execution is allowlisted through the controlled registry.
+    # Default remains smoke_test only.
+    strategies = build_strategies()
+    ctx = StrategyContext()
+
+    proposals: list[Proposal] = []
+    for strategy in strategies:
+        proposals.extend(strategy.generate(snapshot, ctx))
 
     return {
-        "proposals": [proposal],
+        "proposals": proposals,
         "events": state.get("events", []) + ["proposal_created"],
     }
 

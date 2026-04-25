@@ -21,6 +21,7 @@ python scripts/run_hybrid_smoke.py
 echo
 echo "=== 4. Verify no-approval execution is blocked ==="
 rm -f approvals/trade-demo-fixed-0001.approved
+rm -f approvals/trade-smoke-fixed-0001.approved
 NO_APPROVAL_OUTPUT="$(python scripts/run_agent.py)"
 echo "$NO_APPROVAL_OUTPUT"
 
@@ -38,6 +39,7 @@ echo "$APPROVED_OUTPUT" | grep -q "APPROVAL"
 echo
 echo "=== 6. Clean local runtime files ==="
 rm -f approvals/trade-demo-fixed-0001.approved
+rm -f approvals/trade-smoke-fixed-0001.approved
 git restore logs/audit.jsonl logs/state.json 2>/dev/null || true
 
 echo

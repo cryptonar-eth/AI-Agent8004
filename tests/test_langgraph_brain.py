@@ -19,4 +19,4 @@ def test_langgraph_brain_creates_proposal_and_uses_executor(
     assert "BLOCKED: not approved" in captured.out
     assert "proposal_created" in result["events"]
     assert "executor_invoked" in result["events"]
-    assert result["proposals"][0].proposal_id == "langgraph-smoke-0001"
+    assert result["proposals"][0].proposal_id == "trade-smoke-fixed-0001"
