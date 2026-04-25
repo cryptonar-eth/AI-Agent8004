@@ -21,3 +21,5 @@ engine/novanexus_engine/target/
 *.pyd
 *.dll
 *.dylib
+dist/
+engine/novanexus_engine/dist/

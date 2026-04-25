@@ -28,10 +28,16 @@ jobs:
           python -m pip install -e ".[dev]"
           python -m pip install maturin
 
-      - name: Build Rust risk engine
+      - name: Build Rust risk engine wheel
         run: |
-          cd engine/novanexus_engine
-          python -m maturin develop --release
+          python -m maturin build \
+            --release \
+            --manifest-path engine/novanexus_engine/Cargo.toml \
+            --out dist
+
+      - name: Install Rust risk engine wheel
+        run: |
+          python -m pip install --force-reinstall dist/novanexus_engine-*.whl
 
       - name: Run safety tests
         run: |
