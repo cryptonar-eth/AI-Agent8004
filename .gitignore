@@ -26,3 +26,5 @@ engine/novanexus_engine/dist/
 # Runtime approval files
 approvals/*.approved
 approvals/KILL_SWITCH
+# Runtime logs and state
+logs/*.jsonl

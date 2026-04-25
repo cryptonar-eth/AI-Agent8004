@@ -8,8 +8,8 @@ echo "=== Remove local hash-bound approval files ==="
 rm -f approvals/*.approved
 
 echo
-echo "=== Restore tracked runtime logs/state ==="
-git restore logs/audit.jsonl logs/state.json 2>/dev/null || true
+echo "=== Remove local runtime logs/state ==="
+rm -f logs/audit.jsonl logs/state.json
 
 echo
 echo "=== Runtime reset complete ==="
