@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from collections.abc import Callable
 
+from agent.config.strategy_policy import StrategyPolicy, load_strategy_policy
 from agent.strategies.base import Strategy
 from agent.strategies.basis import BasisStrategy
 from agent.strategies.funding_carry import FundingCarryStrategy
@@ -57,3 +58,8 @@ def build_strategies(names: list[str] | tuple[str, ...] | None = None) -> list[S
         strategies.append(build_strategy(name))
 
     return strategies
+
+def build_strategies_from_policy(policy: StrategyPolicy | None = None) -> list[Strategy]:
+    active_policy = policy or load_strategy_policy()
+    return build_strategies(active_policy.enabled_strategies)
+

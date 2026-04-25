@@ -11,7 +11,7 @@ from agent.data.market_data import StaticMarketDataProvider
 from agent.governance.approvals import approval_path
 from agent.trading.execution import Executor
 from agent.strategies.base import StrategyContext
-from agent.strategies.registry import build_strategies
+from agent.strategies.registry import build_strategies_from_policy
 
 
 class BrainState(TypedDict, total=False):
@@ -41,7 +41,7 @@ def create_proposal(state: BrainState) -> BrainState:
 
     # Strategy execution is allowlisted through the controlled registry.
     # Default remains smoke_test only.
-    strategies = build_strategies()
+    strategies = build_strategies_from_policy()
     ctx = StrategyContext()
 
     proposals: list[Proposal] = []
