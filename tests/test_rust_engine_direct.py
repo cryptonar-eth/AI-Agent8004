@@ -100,3 +100,14 @@ def test_direct_rust_engine_denies_invalid_json() -> None:
     assert decision["allowed"] is False
     assert decision["proposal_id"] == "unknown"
     assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_bad_proposal_id() -> None:
+    payload = _safe_payload()
+    payload["proposal_id"] = "../bad"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid proposal_id" in decision["reason"]

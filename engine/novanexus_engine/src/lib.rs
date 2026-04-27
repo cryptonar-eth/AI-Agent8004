@@ -33,6 +33,18 @@ fn decision(allowed: bool, proposal_id: String, reason: &str) -> String {
     .expect("risk decision serialization must not fail")
 }
 
+fn is_safe_proposal_id(proposal_id: &str) -> bool {
+    let len = proposal_id.len();
+
+    if !(8..=128).contains(&len) {
+        return false;
+    }
+
+    proposal_id
+        .bytes()
+        .all(|b| b.is_ascii_alphanumeric() || b == b'_' || b == b'-')
+}
+
 #[pyfunction]
 fn validate_order_json(order_json: &str) -> PyResult<String> {
     let proposal: OrderProposal = match serde_json::from_str(order_json) {
@@ -46,8 +58,12 @@ fn validate_order_json(order_json: &str) -> PyResult<String> {
         }
     };
 
-    if proposal.proposal_id.trim().is_empty() {
-        return Ok(decision(false, "unknown".to_string(), "missing proposal_id"));
+    if !is_safe_proposal_id(&proposal.proposal_id) {
+        return Ok(decision(
+            false,
+            "unknown".to_string(),
+            "invalid proposal_id format",
+        ));
     }
 
     if proposal.symbol != "ETH-USD" {
