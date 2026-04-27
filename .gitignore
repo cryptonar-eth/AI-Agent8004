@@ -28,3 +28,5 @@ approvals/*.approved
 approvals/KILL_SWITCH
 # Runtime logs and state
 logs/*.jsonl
+# Runtime logs directory
+logs/
