@@ -228,3 +228,56 @@ def test_direct_rust_engine_denies_wrong_type_for_quantity() -> None:
     assert decision["allowed"] is False
     assert decision["proposal_id"] == "unknown"
     assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_real_order_intent_even_if_dry_run_true() -> None:
+    payload = _safe_payload()
+    payload["intent"] = "REAL_ORDER"
+    payload["dry_run"] = True
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "DRY_RUN_ORDER" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_blank_intent() -> None:
+    payload = _safe_payload()
+    payload["intent"] = ""
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "DRY_RUN_ORDER" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_case_intent() -> None:
+    payload = _safe_payload()
+    payload["intent"] = "dry_run_order"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "DRY_RUN_ORDER" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_missing_required_intent() -> None:
+    payload = _safe_payload()
+    del payload["intent"]
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_type_for_intent() -> None:
+    payload = _safe_payload()
+    payload["intent"] = {"bad": "type"}
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
