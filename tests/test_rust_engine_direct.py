@@ -676,3 +676,66 @@ def test_direct_rust_engine_denies_null_approved() -> None:
     assert decision["allowed"] is False
     assert decision["proposal_id"] == "unknown"
     assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_empty_json_string() -> None:
+    raw = novanexus_engine.validate_order_json("")
+    decision = json.loads(raw)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_empty_object() -> None:
+    raw = novanexus_engine.validate_order_json("{}")
+    decision = json.loads(raw)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_array_payload() -> None:
+    raw = novanexus_engine.validate_order_json("[]")
+    decision = json.loads(raw)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_string_literal_payload() -> None:
+    raw = novanexus_engine.validate_order_json('"not an object"')
+    decision = json.loads(raw)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_number_literal_payload() -> None:
+    raw = novanexus_engine.validate_order_json("123")
+    decision = json.loads(raw)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_boolean_literal_payload() -> None:
+    raw = novanexus_engine.validate_order_json("true")
+    decision = json.loads(raw)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_null_literal_payload() -> None:
+    raw = novanexus_engine.validate_order_json("null")
+    decision = json.loads(raw)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
