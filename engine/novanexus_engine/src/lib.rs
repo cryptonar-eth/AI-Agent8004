@@ -16,7 +16,7 @@ struct OrderProposal {
     approved: bool,
 }
 
-#[derive(Debug, Serialize)]
+#[derive(Debug, Serialize, Deserialize)]
 struct RiskDecision {
     allowed: bool,
     reason: String,
@@ -143,3 +143,39 @@ fn novanexus_engine(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(validate_order_json, m)?)?;
     Ok(())
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn safe_proposal_id_accepts_valid_ids() {
+        assert!(is_safe_proposal_id("trade-demo-0001"));
+        assert!(is_safe_proposal_id("abcDEF123_456-789"));
+        assert!(is_safe_proposal_id(&"a".repeat(8)));
+        assert!(is_safe_proposal_id(&"a".repeat(128)));
+    }
+
+    #[test]
+    fn safe_proposal_id_rejects_invalid_ids() {
+        assert!(!is_safe_proposal_id(""));
+        assert!(!is_safe_proposal_id("short"));
+        assert!(!is_safe_proposal_id(&"a".repeat(129)));
+        assert!(!is_safe_proposal_id("../danger"));
+        assert!(!is_safe_proposal_id("bad/id"));
+        assert!(!is_safe_proposal_id("bad id"));
+        assert!(!is_safe_proposal_id("trade-é-0001"));
+    }
+
+    #[test]
+    fn decision_serializes_expected_contract() {
+        let raw = decision(false, "unknown".to_string(), "test reason");
+        let parsed: RiskDecision = serde_json::from_str(&raw).expect("decision JSON must parse");
+
+        assert!(!parsed.allowed);
+        assert_eq!(parsed.proposal_id, "unknown");
+        assert_eq!(parsed.reason, "test reason");
+        assert_eq!(parsed.engine, "novanexus_rust_engine_v0.1");
+    }
+}
+
