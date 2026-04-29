@@ -546,3 +546,56 @@ def test_direct_rust_engine_allows_small_positive_quantity() -> None:
 
     assert decision["allowed"] is True
     assert decision["engine"] == "novanexus_rust_engine_v0.1"
+
+
+def test_direct_rust_engine_allows_small_positive_price() -> None:
+    payload = _safe_payload()
+    payload["price"] = "0.00000001"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is True
+    assert decision["engine"] == "novanexus_rust_engine_v0.1"
+
+
+def test_direct_rust_engine_allows_large_positive_price() -> None:
+    payload = _safe_payload()
+    payload["price"] = "999999999.99999999"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is True
+    assert decision["engine"] == "novanexus_rust_engine_v0.1"
+
+
+def test_direct_rust_engine_denies_non_numeric_price_string() -> None:
+    payload = _safe_payload()
+    payload["price"] = "not-a-price"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_nan_price_string() -> None:
+    payload = _safe_payload()
+    payload["price"] = "NaN"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_type_for_price() -> None:
+    payload = _safe_payload()
+    payload["price"] = {"bad": "type"}
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
