@@ -162,3 +162,69 @@ def test_direct_rust_engine_denies_negative_price() -> None:
 
     assert decision["allowed"] is False
     assert "price must be positive" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_missing_required_qty() -> None:
+    payload = _safe_payload()
+    del payload["qty"]
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_missing_required_symbol() -> None:
+    payload = _safe_payload()
+    del payload["symbol"]
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_non_numeric_quantity_string() -> None:
+    payload = _safe_payload()
+    payload["qty"] = "not-a-number"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_nan_quantity_string() -> None:
+    payload = _safe_payload()
+    payload["qty"] = "NaN"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_infinity_price_string() -> None:
+    payload = _safe_payload()
+    payload["price"] = "Infinity"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_type_for_quantity() -> None:
+    payload = _safe_payload()
+    payload["qty"] = {"bad": "type"}
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
