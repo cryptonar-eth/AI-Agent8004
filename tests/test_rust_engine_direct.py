@@ -281,3 +281,69 @@ def test_direct_rust_engine_denies_wrong_type_for_intent() -> None:
     assert decision["allowed"] is False
     assert decision["proposal_id"] == "unknown"
     assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_missing_required_dry_run() -> None:
+    payload = _safe_payload()
+    del payload["dry_run"]
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_missing_required_approved() -> None:
+    payload = _safe_payload()
+    del payload["approved"]
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_type_for_dry_run() -> None:
+    payload = _safe_payload()
+    payload["dry_run"] = "true"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_type_for_approved() -> None:
+    payload = _safe_payload()
+    payload["approved"] = "true"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_dry_run_false_even_with_approval() -> None:
+    payload = _safe_payload()
+    payload["dry_run"] = False
+    payload["approved"] = True
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "real trading" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_approved_false_even_with_dry_run() -> None:
+    payload = _safe_payload()
+    payload["dry_run"] = True
+    payload["approved"] = False
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "approval" in decision["reason"]
