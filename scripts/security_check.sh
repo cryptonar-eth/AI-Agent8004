@@ -11,15 +11,19 @@ git ls-files | grep -Ei '(^|/)\.env$|id_rsa|id_ed25519|\.pem$|\.key$|\.p12$|wall
 } || true
 
 echo
-echo "=== 2. Run Python/Rust safety tests ==="
+echo "=== 2. Run native Rust safety tests ==="
+cargo test --manifest-path engine/novanexus_engine/Cargo.toml
+
+echo
+echo "=== 3. Run Python/Rust safety tests ==="
 pytest -q
 
 echo
-echo "=== 3. Run hybrid Rust bridge smoke test ==="
+echo "=== 4. Run hybrid Rust bridge smoke test ==="
 python scripts/run_hybrid_smoke.py
 
 echo
-echo "=== 4. Verify no-approval execution is blocked ==="
+echo "=== 5. Verify no-approval execution is blocked ==="
 rm -f approvals/trade-demo-fixed-0001.approved
 rm -f approvals/trade-smoke-fixed-0001.approved
 NO_APPROVAL_OUTPUT="$(python scripts/run_agent.py)"
@@ -28,7 +32,7 @@ echo "$NO_APPROVAL_OUTPUT"
 echo "$NO_APPROVAL_OUTPUT" | grep -q "BLOCKED: not approved"
 
 echo
-echo "=== 5. Verify approval still only dry-runs ==="
+echo "=== 6. Verify approval still only dry-runs ==="
 python scripts/approve_trade_demo.py
 APPROVED_OUTPUT="$(python scripts/run_agent.py)"
 echo "$APPROVED_OUTPUT"
@@ -37,13 +41,13 @@ echo "$APPROVED_OUTPUT" | grep -q "DRY_RUN"
 echo "$APPROVED_OUTPUT" | grep -q "APPROVAL"
 
 echo
-echo "=== 6. Clean local runtime files ==="
+echo "=== 7. Clean local runtime files ==="
 rm -f approvals/trade-demo-fixed-0001.approved
 rm -f approvals/trade-smoke-fixed-0001.approved
 git restore logs/audit.jsonl logs/state.json 2>/dev/null || true
 
 echo
-echo "=== 7. Final git status ==="
+echo "=== 8. Final git status ==="
 git status --short --branch
 
 echo
