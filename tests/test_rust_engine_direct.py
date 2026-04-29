@@ -111,3 +111,54 @@ def test_direct_rust_engine_denies_bad_proposal_id() -> None:
     assert decision["allowed"] is False
     assert decision["proposal_id"] == "unknown"
     assert "invalid proposal_id" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_unknown_fields() -> None:
+    payload = _safe_payload()
+    payload["unexpected_field"] = "must not be accepted"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_zero_quantity() -> None:
+    payload = _safe_payload()
+    payload["qty"] = "0"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "quantity must be positive" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_negative_quantity() -> None:
+    payload = _safe_payload()
+    payload["qty"] = "-0.001"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "quantity must be positive" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_zero_price() -> None:
+    payload = _safe_payload()
+    payload["price"] = "0"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "price must be positive" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_negative_price() -> None:
+    payload = _safe_payload()
+    payload["price"] = "-2500.00"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "price must be positive" in decision["reason"]

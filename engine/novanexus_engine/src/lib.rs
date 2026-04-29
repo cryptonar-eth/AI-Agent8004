@@ -4,6 +4,7 @@ use serde::{Deserialize, Serialize};
 use std::str::FromStr;
 
 #[derive(Debug, Deserialize)]
+#[serde(deny_unknown_fields)]
 struct OrderProposal {
     proposal_id: String,
     symbol: String,
@@ -111,11 +112,22 @@ fn validate_order_json(order_json: &str) -> PyResult<String> {
         return Ok(decision(false, proposal.proposal_id, "manual approval missing"));
     }
 
-    if proposal.price.is_none() {
+    let price = match proposal.price {
+        Some(price) => price,
+        None => {
+            return Ok(decision(
+                false,
+                proposal.proposal_id,
+                "price required for deterministic dry-run validation",
+            ))
+        }
+    };
+
+    if price <= Decimal::ZERO {
         return Ok(decision(
             false,
             proposal.proposal_id,
-            "price required for deterministic dry-run validation",
+            "price must be positive",
         ));
     }
 
