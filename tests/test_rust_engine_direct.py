@@ -413,3 +413,96 @@ def test_direct_rust_engine_denies_unicode_proposal_id() -> None:
     assert decision["allowed"] is False
     assert decision["proposal_id"] == "unknown"
     assert "invalid proposal_id" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_blank_symbol() -> None:
+    payload = _safe_payload()
+    payload["symbol"] = ""
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "symbol not allowed" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_symbol_with_whitespace() -> None:
+    payload = _safe_payload()
+    payload["symbol"] = " ETH-USD "
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "symbol not allowed" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_case_symbol() -> None:
+    payload = _safe_payload()
+    payload["symbol"] = "eth-usd"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "symbol not allowed" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_type_for_symbol() -> None:
+    payload = _safe_payload()
+    payload["symbol"] = {"bad": "type"}
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_allows_sell_side() -> None:
+    payload = _safe_payload()
+    payload["side"] = "sell"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is True
+    assert decision["engine"] == "novanexus_rust_engine_v0.1"
+
+
+def test_direct_rust_engine_denies_blank_side() -> None:
+    payload = _safe_payload()
+    payload["side"] = ""
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "side must be buy or sell" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_case_side() -> None:
+    payload = _safe_payload()
+    payload["side"] = "BUY"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "side must be buy or sell" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_missing_required_side() -> None:
+    payload = _safe_payload()
+    del payload["side"]
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_wrong_type_for_side() -> None:
+    payload = _safe_payload()
+    payload["side"] = ["buy"]
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid JSON" in decision["reason"]
