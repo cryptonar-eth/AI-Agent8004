@@ -506,3 +506,43 @@ def test_direct_rust_engine_denies_wrong_type_for_side() -> None:
     assert decision["allowed"] is False
     assert decision["proposal_id"] == "unknown"
     assert "invalid JSON" in decision["reason"]
+
+
+def test_direct_rust_engine_allows_exact_max_quantity() -> None:
+    payload = _safe_payload()
+    payload["qty"] = "0.01"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is True
+    assert decision["engine"] == "novanexus_rust_engine_v0.1"
+
+
+def test_direct_rust_engine_denies_quantity_just_above_max() -> None:
+    payload = _safe_payload()
+    payload["qty"] = "0.010000001"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "quantity exceeds" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_large_decimal_quantity() -> None:
+    payload = _safe_payload()
+    payload["qty"] = "999999999.999999999"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert "quantity exceeds" in decision["reason"]
+
+
+def test_direct_rust_engine_allows_small_positive_quantity() -> None:
+    payload = _safe_payload()
+    payload["qty"] = "0.00000001"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is True
+    assert decision["engine"] == "novanexus_rust_engine_v0.1"
