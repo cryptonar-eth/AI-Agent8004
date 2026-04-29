@@ -347,3 +347,69 @@ def test_direct_rust_engine_denies_approved_false_even_with_dry_run() -> None:
 
     assert decision["allowed"] is False
     assert "approval" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_too_short_proposal_id() -> None:
+    payload = _safe_payload()
+    payload["proposal_id"] = "short"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid proposal_id" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_too_long_proposal_id() -> None:
+    payload = _safe_payload()
+    payload["proposal_id"] = "a" * 129
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid proposal_id" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_path_traversal_proposal_id() -> None:
+    payload = _safe_payload()
+    payload["proposal_id"] = "../dangerous-id"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid proposal_id" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_slash_in_proposal_id() -> None:
+    payload = _safe_payload()
+    payload["proposal_id"] = "bad/id-0001"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid proposal_id" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_space_in_proposal_id() -> None:
+    payload = _safe_payload()
+    payload["proposal_id"] = "bad id 0001"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid proposal_id" in decision["reason"]
+
+
+def test_direct_rust_engine_denies_unicode_proposal_id() -> None:
+    payload = _safe_payload()
+    payload["proposal_id"] = "trade-é-0001"
+
+    decision = _validate(payload)
+
+    assert decision["allowed"] is False
+    assert decision["proposal_id"] == "unknown"
+    assert "invalid proposal_id" in decision["reason"]
