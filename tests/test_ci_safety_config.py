@@ -35,3 +35,21 @@ def test_security_check_runs_native_rust_tests() -> None:
     script = Path("scripts/security_check.sh").read_text(encoding="utf-8")
 
     assert "cargo test --manifest-path engine/novanexus_engine/Cargo.toml" in script
+
+
+def test_security_check_runs_rust_clippy() -> None:
+    script = Path("scripts/security_check.sh").read_text(encoding="utf-8")
+
+    assert "cargo clippy --manifest-path engine/novanexus_engine/Cargo.toml --all-targets -- -D warnings" in script
+
+
+def test_rust_toolchain_file_includes_clippy() -> None:
+    data = tomllib.loads(Path("rust-toolchain.toml").read_text(encoding="utf-8"))
+
+    assert "clippy" in data["toolchain"]["components"]
+
+
+def test_ci_installs_rustfmt_and_clippy_components() -> None:
+    workflow = Path(".github/workflows/ci.yml").read_text(encoding="utf-8")
+
+    assert "components: rustfmt, clippy" in workflow

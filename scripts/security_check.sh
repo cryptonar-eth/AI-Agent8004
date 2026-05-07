@@ -15,19 +15,23 @@ echo "=== 2. Check Rust formatting ==="
 cargo fmt --manifest-path engine/novanexus_engine/Cargo.toml -- --check
 
 echo
-echo "=== 3. Run native Rust safety tests ==="
+echo "=== 3. Run Rust Clippy lint checks ==="
+cargo clippy --manifest-path engine/novanexus_engine/Cargo.toml --all-targets -- -D warnings
+
+echo
+echo "=== 4. Run native Rust safety tests ==="
 cargo test --manifest-path engine/novanexus_engine/Cargo.toml
 
 echo
-echo "=== 4. Run Python/Rust safety tests ==="
+echo "=== 5. Run Python/Rust safety tests ==="
 pytest -q
 
 echo
-echo "=== 5. Run hybrid Rust bridge smoke test ==="
+echo "=== 6. Run hybrid Rust bridge smoke test ==="
 python scripts/run_hybrid_smoke.py
 
 echo
-echo "=== 6. Verify no-approval execution is blocked ==="
+echo "=== 7. Verify no-approval execution is blocked ==="
 rm -f approvals/trade-demo-fixed-0001.approved
 rm -f approvals/trade-smoke-fixed-0001.approved
 NO_APPROVAL_OUTPUT="$(python scripts/run_agent.py)"
@@ -36,7 +40,7 @@ echo "$NO_APPROVAL_OUTPUT"
 echo "$NO_APPROVAL_OUTPUT" | grep -q "BLOCKED: not approved"
 
 echo
-echo "=== 7. Verify approval still only dry-runs ==="
+echo "=== 8. Verify approval still only dry-runs ==="
 python scripts/approve_trade_demo.py
 APPROVED_OUTPUT="$(python scripts/run_agent.py)"
 echo "$APPROVED_OUTPUT"
@@ -45,13 +49,13 @@ echo "$APPROVED_OUTPUT" | grep -q "DRY_RUN"
 echo "$APPROVED_OUTPUT" | grep -q "APPROVAL"
 
 echo
-echo "=== 8. Clean local runtime files ==="
+echo "=== 9. Clean local runtime files ==="
 rm -f approvals/trade-demo-fixed-0001.approved
 rm -f approvals/trade-smoke-fixed-0001.approved
 git restore logs/audit.jsonl logs/state.json 2>/dev/null || true
 
 echo
-echo "=== 9. Final git status ==="
+echo "=== 10. Final git status ==="
 git status --short --branch
 
 echo
