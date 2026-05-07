@@ -76,11 +76,19 @@ fn validate_order_json(order_json: &str) -> PyResult<String> {
     }
 
     if proposal.side != "buy" && proposal.side != "sell" {
-        return Ok(decision(false, proposal.proposal_id, "side must be buy or sell"));
+        return Ok(decision(
+            false,
+            proposal.proposal_id,
+            "side must be buy or sell",
+        ));
     }
 
     if proposal.qty <= Decimal::ZERO {
-        return Ok(decision(false, proposal.proposal_id, "quantity must be positive"));
+        return Ok(decision(
+            false,
+            proposal.proposal_id,
+            "quantity must be positive",
+        ));
     }
 
     let max_qty = Decimal::from_str("0.01").expect("valid decimal literal");
@@ -109,7 +117,11 @@ fn validate_order_json(order_json: &str) -> PyResult<String> {
     }
 
     if !proposal.approved {
-        return Ok(decision(false, proposal.proposal_id, "manual approval missing"));
+        return Ok(decision(
+            false,
+            proposal.proposal_id,
+            "manual approval missing",
+        ));
     }
 
     let price = match proposal.price {
@@ -178,4 +190,3 @@ mod tests {
         assert_eq!(parsed.engine, "novanexus_rust_engine_v0.1");
     }
 }
-
